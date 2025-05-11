@@ -1,10 +1,12 @@
 package model
 
-type Recipe struct {
-    Ingredients []string
-}
+import (
+    "encoding/json"
+)
 
-type Graph map[string][][]string
+type Recipe struct {
+    Ingredients []string `json:"ingredients"`
+}
 
 type Node struct {
     Element   string
@@ -12,6 +14,10 @@ type Node struct {
     Visited   map[string]bool
     Depth     int
 }
+
+type Graph map[string][][]string
+
+type TierMap map[string]int
 
 type SearchResult struct {
     TargetElement string   `json:"targetElement"`
@@ -29,4 +35,21 @@ type SearchParams struct {
 
 type ElementListResponse struct {
     Elements []string `json:"elements"`
+}
+
+type ElementData struct {
+    Name   string `json:"name"`
+    Recipe string `json:"recipe"`
+    Tier   int    `json:"tier"`
+}
+
+func (r Recipe) MarshalJSON() ([]byte, error) {
+    if r.Ingredients == nil {
+        r.Ingredients = []string{}
+    }
+    return json.Marshal(struct {
+        Ingredients []string `json:"ingredients"`
+    }{
+        Ingredients: r.Ingredients,
+    })
 }

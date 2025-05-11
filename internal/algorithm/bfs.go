@@ -2,135 +2,134 @@ package algorithm
 
 import (
     "container/list"
-    "sync"
     "time"
 
     "github.com/fliegenhaan/Tubes2_BE_Jepangor/internal/model"
 )
 
-func BFS(graph model.Graph, targetElement string, findShortest bool, maxRecipes int) model.SearchResult {
+const (
+    maxDepth = 15
+)
+
+func BFS(graph model.Graph, tierMap model.TierMap, targetElement string, findShortest bool, maxRecipes int) model.SearchResult {
     startTime := time.Now()
-    visitedCount := 0
-    results := []model.Recipe{}
-    
-    baseElements := []string{"Air", "Earth", "Fire", "Water"}
     
     if _, exists := graph[targetElement]; !exists {
         return model.SearchResult{
             TargetElement: targetElement,
-            Recipes:       results,
-            VisitedNodes:  visitedCount,
+            Recipes:       []model.Recipe{},
+            VisitedNodes:  0,
             TimeElapsed:   time.Since(startTime).Seconds(),
         }
     }
+
+    baseElements := []string{"Air", "Earth", "Fire", "Water"}
+    
+    targetTier, exists := tierMap[targetElement]
+    if !exists {
+        targetTier = 999
+    }
     
     for _, base := range baseElements {
-        if targetElement == base {
+        if base == targetElement {
+            recipe := model.Recipe{
+                Ingredients: []string{targetElement},
+            }
             return model.SearchResult{
                 TargetElement: targetElement,
-                Recipes:       []model.Recipe{},
+                Recipes:       []model.Recipe{recipe},
                 VisitedNodes:  1,
                 TimeElapsed:   time.Since(startTime).Seconds(),
             }
         }
     }
-    
+
     queue := list.New()
     visited := make(map[string]bool)
-    
+    var recipes []model.Recipe
+    visitedCount := 0
+
     for _, element := range baseElements {
         node := model.Node{
-            Element:  element,
-            Path:     []model.Recipe{},
-            Visited:  map[string]bool{element: true},
-            Depth:    0,
+            Element:   element,
+            Path:      []model.Recipe{},
+            Visited:   make(map[string]bool),
+            Depth:     0,
         }
+        node.Visited[element] = true
         queue.PushBack(node)
     }
-    
-    var mutex sync.Mutex
-    
-    for queue.Len() > 0 && (len(results) < maxRecipes || findShortest) {
-        current := queue.Remove(queue.Front()).(model.Node)
+
+    for queue.Len() > 0 && len(recipes) < maxRecipes {
+        currNode := queue.Remove(queue.Front()).(model.Node)
         visitedCount++
         
-        if visited[current.Element] {
+        if currNode.Depth > maxDepth {
             continue
         }
-        visited[current.Element] = true
         
-        for nextElement, recipes := range graph {
-            if visited[nextElement] {
-                continue
-            }
+        if currNode.Element == targetElement {
+            recipes = append(recipes, currNode.Path...)
             
-            for _, recipe := range recipes {
-                if len(recipe) != 2 {
+            if findShortest {
+                break
+            }
+            continue
+        }
+
+        if !visited[currNode.Element] {
+            visited[currNode.Element] = true
+            
+            for nextElement, combinations := range graph {
+                nextTier, exists := tierMap[nextElement]
+                if !exists || (nextTier >= targetTier && nextElement != targetElement) {
                     continue
                 }
                 
-                canMake := false
-                requiredElement := ""
-                
-                if recipe[0] == current.Element {
-                    canMake = true
-                    requiredElement = recipe[1]
-                } else if recipe[1] == current.Element {
-                    canMake = true
-                    requiredElement = recipe[0]
-                }
-                
-                if canMake {
-                    if current.Visited[requiredElement] {
-                        newPath := make([]model.Recipe, len(current.Path))
-                        copy(newPath, current.Path)
-                        newRecipe := model.Recipe{Ingredients: []string{current.Element, requiredElement}}
-                        newPath = append(newPath, newRecipe)
+                for _, combination := range combinations {
+                    if len(combination) == 2 {
+                        ingredient1, ingredient2 := combination[0], combination[1]
                         
-                        newVisited := make(map[string]bool)
-                        for k, v := range current.Visited {
-                            newVisited[k] = v
-                        }
-                        newVisited[nextElement] = true
-                        
-                        if nextElement == targetElement {
-                            mutex.Lock()
-                            results = append(results, newPath...)
-                            mutex.Unlock()
-                            
-                            if findShortest {
-                                return model.SearchResult{
-                                    TargetElement: targetElement,
-                                    Recipes:       []model.Recipe{newRecipe},
-                                    VisitedNodes:  visitedCount,
-                                    TimeElapsed:   time.Since(startTime).Seconds(),
-                                }
+                        if ingredient1 == currNode.Element || ingredient2 == currNode.Element {
+                            otherIngredient := ingredient2
+                            if ingredient1 != currNode.Element {
+                                otherIngredient = ingredient1
                             }
                             
-                            if len(results) >= maxRecipes {
-                                break
+                            if currNode.Visited[otherIngredient] {
+                                continue
                             }
-                        } else {
-                            queue.PushBack(model.Node{
-                                Element:  nextElement,
-                                Path:     newPath,
-                                Visited:  newVisited,
-                                Depth:    current.Depth + 1,
-                            })
+                            
+                            newNode := model.Node{
+                                Element:   nextElement,
+                                Path:      make([]model.Recipe, len(currNode.Path)+1),
+                                Visited:   make(map[string]bool),
+                                Depth:     currNode.Depth + 1,
+                            }
+                            
+                            copy(newNode.Path, currNode.Path)
+                            for k, v := range currNode.Visited {
+                                newNode.Visited[k] = v
+                            }
+                            
+                            newNode.Visited[nextElement] = true
+                            newNode.Visited[otherIngredient] = true
+                            
+                            newNode.Path[len(currNode.Path)] = model.Recipe{
+                                Ingredients: []string{currNode.Element, otherIngredient},
+                            }
+                            
+                            queue.PushBack(newNode)
                         }
                     }
                 }
             }
-            
-            if len(results) >= maxRecipes && !findShortest {
-                break
-            }
         }
     }
-    
+
     return model.SearchResult{
         TargetElement: targetElement,
-        Recipes:       results,
+        Recipes:       recipes,
         VisitedNodes:  visitedCount,
         TimeElapsed:   time.Since(startTime).Seconds(),
     }

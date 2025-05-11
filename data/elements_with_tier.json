@@ -1,0 +1,3602 @@
+[
+  {
+    "name": "Air",
+    "recipe": "Fire + Mist",
+    "tier": 0
+  },
+  {
+    "name": "Earth",
+    "recipe": "Available from the start",
+    "tier": 0
+  },
+  {
+    "name": "Fire",
+    "recipe": "Fire + Alcohol; Fire + Coal",
+    "tier": 0
+  },
+  {
+    "name": "Water",
+    "recipe": "Heat + Ice; Heat + Snow",
+    "tier": 0
+  },
+  {
+    "name": "Time",
+    "recipe": "Have 100 elements unlocked, including the starting elements.",
+    "tier": 0
+  },
+  {
+    "name": "Dust",
+    "recipe": "Earth + Air; Soil + Air; Land + Air",
+    "tier": 1
+  },
+  {
+    "name": "Energy",
+    "recipe": "Fire + Fire; Fire + Science; Fire + Atmosphere; Heat + Science",
+    "tier": 1
+  },
+  {
+    "name": "Land",
+    "recipe": "Soil + Soil; Soil + Big; Continent + Small; Earth + Earth; Earth + Stone",
+    "tier": 1
+  },
+  {
+    "name": "Lava",
+    "recipe": "Earth + Fire; Earth + Heat; Earth + Liquid",
+    "tier": 1
+  },
+  {
+    "name": "Mist",
+    "recipe": "Air + Water; Air + Steam; Air + Rain",
+    "tier": 1
+  },
+  {
+    "name": "Mud",
+    "recipe": "Water + Earth; Water + Soil",
+    "tier": 1
+  },
+  {
+    "name": "Pressure",
+    "recipe": "Air + Air; Air + Atmosphere; Atmosphere + Atmosphere; Geyser + Science; Ocean + Ocean",
+    "tier": 1
+  },
+  {
+    "name": "Puddle",
+    "recipe": "Water + Water; Pond + Small",
+    "tier": 1
+  },
+  {
+    "name": "Smoke",
+    "recipe": "Earth + Gas; Campfire + Water; Campfire + Time; Campfire + Storm; Fire + Plant; Fire + Grass; Fire + Tree; Fire + Wood; Fire + Air",
+    "tier": 1
+  },
+  {
+    "name": "Steam",
+    "recipe": "Water + Heat; Water + Fire; Water + Lava; Water + Gas",
+    "tier": 1
+  },
+  {
+    "name": "Brick",
+    "recipe": "Mud + Fire; Mud + Sun; Clay + Fire; Clay + Sun; Clay + Stone",
+    "tier": 2
+  },
+  {
+    "name": "Continent",
+    "recipe": "Land + Big; Land + Land; Land + Earth; Mountain range + Mountain range",
+    "tier": 2
+  },
+  {
+    "name": "Earthquake",
+    "recipe": "Earth + Motion; Earth + Energy; Continent + Motion",
+    "tier": 2
+  },
+  {
+    "name": "Eruption",
+    "recipe": "Pressure + Volcano; Pressure + Lava; Volcano + Time",
+    "tier": 2
+  },
+  {
+    "name": "Geyser",
+    "recipe": "Steam + Earth; Steam + Hill; Steam + Mountain; Steam + Pressure",
+    "tier": 2
+  },
+  {
+    "name": "Granite",
+    "recipe": "Pressure + Lava; Pressure + Stone; Pressure + Rock",
+    "tier": 2
+  },
+  {
+    "name": "Gunpowder",
+    "recipe": "Charcoal + Mineral; Energy + Mineral; Energy + Charcoal; Fire + Dust; Energy + Dust",
+    "tier": 2
+  },
+  {
+    "name": "Heat",
+    "recipe": "Fire + Idea; Fire + Science; Lava + Philosophy; Air + Energy",
+    "tier": 2
+  },
+  {
+    "name": "Obsidian",
+    "recipe": "Lava + Water; Lava + Cold; Lava + Glass",
+    "tier": 2
+  },
+  {
+    "name": "Pond",
+    "recipe": "Puddle + Puddle; Puddle + Water; Puddle + Big; Lake + Small",
+    "tier": 2
+  },
+  {
+    "name": "Stone",
+    "recipe": "Earth + Pressure; Earth + Solid; Air + Lava",
+    "tier": 2
+  },
+  {
+    "name": "Volcano",
+    "recipe": "Lava + Earth; Lava + Mountain; Lava + Hill; Lava + Container; Fire + Mountain; Fire + Hill; Pressure + Mountain; Pressure + Hill",
+    "tier": 2
+  },
+  {
+    "name": "Wind",
+    "recipe": "Motion + Air; Motion + Atmosphere; Air + Pressure",
+    "tier": 2
+  },
+  {
+    "name": "Chimney",
+    "recipe": "House + Fireplace; House + Smoke; Smoke + Brick; Smoke + Fireplace; Smoke + Stone; Fireplace + Brick; Fireplace + Stone",
+    "tier": 3
+  },
+  {
+    "name": "Clay",
+    "recipe": "Mud + Sand; Mud + Stone; Mineral + Sand; Mineral + Stone; Mineral + Rock; Stone + Liquid; Rock + Liquid",
+    "tier": 3
+  },
+  {
+    "name": "Explosion",
+    "recipe": "Fire + Gunpowder; Fire + Petroleum; Gunpowder + Electricity; Gunpowder + Lightning; Pressure + Volcano; Pressure + Petroleum; Explosion + Petroleum; Heat + Petroleum; Lava + Petroleum; Volcano + Petroleum",
+    "tier": 3
+  },
+  {
+    "name": "Lake",
+    "recipe": "Pond + Water; Pond + Big; Pond + Pond; Sea + Small",
+    "tier": 3
+  },
+  {
+    "name": "Metal",
+    "recipe": "Stone + Fire; Stone + Heat; Ore + Fire; Ore + Heat; Ore + Tool",
+    "tier": 3
+  },
+  {
+    "name": "Mountain",
+    "recipe": "Big + Hill; Earth + Earthquake; Earth + Hill; Hill + Hill; Hill + Earthquake; Earth + Big",
+    "tier": 3
+  },
+  {
+    "name": "Planet",
+    "recipe": "Continent + Continent; Continent + Ocean; Earth + Space; Earth + Solar system; Earth + Sky",
+    "tier": 3
+  },
+  {
+    "name": "Plasma",
+    "recipe": "Science + Star; Science + Sun; Heat + Heat; Heat + Pressure",
+    "tier": 3
+  },
+  {
+    "name": "Sand",
+    "recipe": "Stone + Air; Stone + Wind; Air + Rock; Wind + Rock; Pebble + Air; Pebble + Wind; Pebble + Small",
+    "tier": 3
+  },
+  {
+    "name": "Tornado",
+    "recipe": "Storm + Storm; Storm + Wind; Storm + Motion; Wind + Big; Wind + Wind; Wind + Motion",
+    "tier": 3
+  },
+  {
+    "name": "Wall",
+    "recipe": "Brick + Brick; Wood + Wood; Stone + Stone",
+    "tier": 3
+  },
+  {
+    "name": "Warmth",
+    "recipe": "Heat + Air; Heat + Human",
+    "tier": 3
+  },
+  {
+    "name": "Atmosphere",
+    "recipe": "Air + Planet; Air + Sky",
+    "tier": 4
+  },
+  {
+    "name": "Atomic bomb",
+    "recipe": "Explosion + Energy; Explosion + Explosion; Explosion + Big",
+    "tier": 4
+  },
+  {
+    "name": "Avalanche",
+    "recipe": "Earthquake + Snow; Earthquake + Glacier; Earthquake + Mountain; Earthquake + Mountain range; Wave + Glacier; Wave + Mountain; Wave + Mountain range; Sound + Glacier; Sound + Mountain; Sound + Mountain range; Gun + Glacier; Gun + Mountain; Gun + Mountain range",
+    "tier": 4
+  },
+  {
+    "name": "Beach",
+    "recipe": "Sand + Ocean; Sand + Sea; Sand + Lake; Sand + Water; Sand + Wave",
+    "tier": 4
+  },
+  {
+    "name": "Blade",
+    "recipe": "Stone + Metal; Stone + Steel; Rock + Metal; Rock + Steel",
+    "tier": 4
+  },
+  {
+    "name": "Boiler",
+    "recipe": "Pressure + Metal; Pressure + Tool; Pressure + Container; Steam + Metal; Steam + Tool",
+    "tier": 4
+  },
+  {
+    "name": "Bullet",
+    "recipe": "Gunpowder + Metal; Gunpowder + Steel; Gunpowder + Tool; Gunpowder + Container",
+    "tier": 4
+  },
+  {
+    "name": "Dam",
+    "recipe": "River + Beaver; River + Wall; Water + Wall; Stream + Wall; Beaver + Tree; Beaver + Stream; Beaver + House; Beaver + Lake; Beaver + Water",
+    "tier": 4
+  },
+  {
+    "name": "Desert",
+    "recipe": "Sand + Sand; Sand + Land; Sand + Cactus; Sand + Lizard; Sand + Vulture",
+    "tier": 4
+  },
+  {
+    "name": "Dune",
+    "recipe": "Wind + Desert; Wind + Sand; Wind + Beach; Sand + Desert; Sandstorm + Desert",
+    "tier": 4
+  },
+  {
+    "name": "Firewall",
+    "recipe": "Fire + Wall",
+    "tier": 4
+  },
+  {
+    "name": "Glass",
+    "recipe": "Sand + Fire; Sand + Heat; Sand + Lightning; Sand + Electricity",
+    "tier": 4
+  },
+  {
+    "name": "Gold",
+    "recipe": "Metal + Sun; Steel + Sun; Metal + Rainbow; Steel + Rainbow; Metal + Butter; Steel + Butter; Metal + Sand; Steel + Sand; Metal + Light; Steel + Light; Metal + Alchemist; Steel + Alchemist; Metal + Philosopher's stone; Steel + Philosopher's stone; Quicksilver + Philosopher's stone",
+    "tier": 4
+  },
+  {
+    "name": "Grenade",
+    "recipe": "Explosion + Metal; Explosion + Steel; Explosion + Warrior",
+    "tier": 4
+  },
+  {
+    "name": "House",
+    "recipe": "Wall + Wall; Wall + Human; Wall + Tool; Fireplace + Container; Family + Container",
+    "tier": 4
+  },
+  {
+    "name": "Mercury",
+    "recipe": "Planet + Small; Planet + Heat",
+    "tier": 4
+  },
+  {
+    "name": "Moon",
+    "recipe": "Sky + Cheese; Sky + Planet; Sky + Stone; Sky + Time; Stone + Planet; Night + Planet; Night + Stone; Night + Earth; Night + Cheese",
+    "tier": 4
+  },
+  {
+    "name": "Mountain range",
+    "recipe": "Mountain + Mountain; Mountain + Continent",
+    "tier": 4
+  },
+  {
+    "name": "Plow",
+    "recipe": "Earth + Metal; Earth + Steel; Earth + Wood; Field + Metal; Field + Steel; Field + Wood; Field + Tool",
+    "tier": 4
+  },
+  {
+    "name": "River",
+    "recipe": "Lake + Motion; Stream + Big; Water + Mountain; Rain + Mountain; Rain + Hill",
+    "tier": 4
+  },
+  {
+    "name": "Rust",
+    "recipe": "Air + Metal; Air + Steel; Metal + Oxygen; Steel + Oxygen",
+    "tier": 4
+  },
+  {
+    "name": "Sandstone",
+    "recipe": "Sand + Stone; Sand + Rock; Sand + Earth",
+    "tier": 4
+  },
+  {
+    "name": "Sandstorm",
+    "recipe": "Sand + Storm; Sand + Tornado; Sand + Motion; Desert + Storm; Desert + Tornado; Desert + Motion; Desert + Wind",
+    "tier": 4
+  },
+  {
+    "name": "Sea",
+    "recipe": "Lake + Lake; Lake + Water; Lake + Big; Ocean + Small",
+    "tier": 4
+  },
+  {
+    "name": "Solar system",
+    "recipe": "Planet + Planet; Planet + Sun; Planet + Container; Sun + Container; Mars + Container; Mercury + Container; Venus + Container; Jupiter + Container; Saturn + Container",
+    "tier": 4
+  },
+  {
+    "name": "Sun",
+    "recipe": "Sky + Light; Sky + Fire; Day + Space; Day + Sky; Day + Light; Planet + Fire; Planet + Light",
+    "tier": 4
+  },
+  {
+    "name": "Venus",
+    "recipe": "Planet + Acid rain; Planet + Smog; Planet + Volcano",
+    "tier": 4
+  },
+  {
+    "name": "Waterfall",
+    "recipe": "River + Mountain; River + Mountain range; River + Hill; Lake + Mountain; Lake + Mountain range; Lake + Hill",
+    "tier": 4
+  },
+  {
+    "name": "Wave",
+    "recipe": "Ocean + Wind; Ocean + Storm; Ocean + Hurricane; Sea + Wind; Sea + Storm; Sea + Hurricane; Lake + Wind; Lake + Storm; Lake + Hurricane",
+    "tier": 4
+  },
+  {
+    "name": "Aquarium",
+    "recipe": "Glass + Water; Glass + Fish; Glass + Puddle; Glass + Pond; Fish + Container; Small + Swimming pool",
+    "tier": 5
+  },
+  {
+    "name": "Aurora",
+    "recipe": "Electricity + Atmosphere; Electricity + Antarctica; Electricity + Sky; Electricity + Arctic; Sky + Antarctica; Sky + Arctic; Sun + Atmosphere",
+    "tier": 5
+  },
+  {
+    "name": "Bank",
+    "recipe": "Gold + House; Gold + Skyscraper; Gold + City; Safe + House; Safe + Skyscraper; Safe + City; Money + House; Money + Skyscraper; Money + City; Money + Container; House + Vault",
+    "tier": 5
+  },
+  {
+    "name": "Black hole",
+    "recipe": "Pressure + Star; Pressure + Sun; Darkness + Star; Darkness + Sun",
+    "tier": 5
+  },
+  {
+    "name": "Blender",
+    "recipe": "Blade + Glass; Blade + Electricity; Blade + Windmill; Blade + Wind turbine; Blade + Motion",
+    "tier": 5
+  },
+  {
+    "name": "Bridge",
+    "recipe": "Wood + River; Metal + River; Steel + River; Stream + Wood; Stream + Metal; Stream + Steel",
+    "tier": 5
+  },
+  {
+    "name": "Cloud",
+    "recipe": "Atmosphere + Mist; Atmosphere + Water; Sky + Mist; Sky + Water",
+    "tier": 5
+  },
+  {
+    "name": "Current",
+    "recipe": "Ocean + Motion; Ocean + Heat; Ocean + Cold; Ocean + Science; Sea + Motion; Sea + Heat; Sea + Cold; Sea + Science",
+    "tier": 5
+  },
+  {
+    "name": "Eclipse",
+    "recipe": "Sun + Moon",
+    "tier": 5
+  },
+  {
+    "name": "Factory",
+    "recipe": "House + Chimney; House + Tool",
+    "tier": 5
+  },
+  {
+    "name": "Field",
+    "recipe": "Farmer + Earth; Farmer + Land; Farmer + Soil; Tool + Earth; Tool + Land; Tool + Soil; Plow + Earth; Plow + Land; Plow + Soil",
+    "tier": 5
+  },
+  {
+    "name": "Fireworks",
+    "recipe": "Explosion + Sky; Explosion + Atmosphere",
+    "tier": 5
+  },
+  {
+    "name": "Flood",
+    "recipe": "Rain + Rain; Rain + River; Rain + Lake; Rain + Big; Rain + Time; House + River; House + Tsunami; River + City; Tsunami + City",
+    "tier": 5
+  },
+  {
+    "name": "Galaxy",
+    "recipe": "Star + Star; Star + Solar system; Star + Space; Star + Container; Solar system + Solar system; Solar system + Space; Solar system + Container; Space + Space; Supernova + Container",
+    "tier": 5
+  },
+  {
+    "name": "Glasses",
+    "recipe": "Glass + Glass; Glass + Metal; Glass + Steel; Glass + Human; Human + Lens; Lens + Lens",
+    "tier": 5
+  },
+  {
+    "name": "Gun",
+    "recipe": "Bullet + Metal; Bullet + Steel; Bullet + Bow; Bullet + Container; Bow + Metal; Bow + Steel; Bow + Gunpowder",
+    "tier": 5
+  },
+  {
+    "name": "Hourglass",
+    "recipe": "Sand + Glass; Sand + Time; Sand + Container; Glass + Time; Time + Container",
+    "tier": 5
+  },
+  {
+    "name": "Hurricane",
+    "recipe": "Ocean + Tornado; Sea + Tornado; Ocean + Storm; Sea + Storm",
+    "tier": 5
+  },
+  {
+    "name": "Island",
+    "recipe": "Volcano + Sea; Volcano + Ocean; Maui's fishhook + Ocean; Maui's fishhook + Sea",
+    "tier": 5
+  },
+  {
+    "name": "Katana",
+    "recipe": "Blade + Heat; Blade + Shuriken; Blade + Ninja; Sword + Shuriken; Sword + Ninja",
+    "tier": 5
+  },
+  {
+    "name": "Mars",
+    "recipe": "Planet + Rust; Planet + Desert",
+    "tier": 5
+  },
+  {
+    "name": "Meteoroid",
+    "recipe": "Space + Stone; Space + Rock; Space + Boulder; Solar system + Stone; Solar system + Rock; Solar system + Boulder; Sun + Stone; Sun + Rock; Sun + Boulder",
+    "tier": 5
+  },
+  {
+    "name": "Mirror",
+    "recipe": "Glass + Metal; Glass + Steel; Glass + Wood",
+    "tier": 5
+  },
+  {
+    "name": "Oasis",
+    "recipe": "Desert + Water; Desert + Puddle; Desert + Pond; Desert + River; Desert + Lake; Desert + Stream; Desert + Tree; Desert + Palm",
+    "tier": 5
+  },
+  {
+    "name": "Ocean",
+    "recipe": "Sea + Sea; Sea + Water; Sea + Big; Tide + Container",
+    "tier": 5
+  },
+  {
+    "name": "Primordial soup",
+    "recipe": "Lava + Ocean; Lava + Sea; Planet + Ocean; Planet + Sea; Earth + Ocean; Earth + Sea",
+    "tier": 5
+  },
+  {
+    "name": "Pyramid",
+    "recipe": "Desert + Stone; Desert + Grave; Desert + Graveyard; Desert + Gravestone; Desert + Mountain; Desert + Hill; Mummy + Container; Container + Book of the dead",
+    "tier": 5
+  },
+  {
+    "name": "Rainbow",
+    "recipe": "Rain + Sun; Rain + Light; Water + Light; Water + Sun; Cloud + Light; Prism + Sun; Prism + Light",
+    "tier": 5
+  },
+  {
+    "name": "Rocket",
+    "recipe": "Atmosphere + Airplane; Atmosphere + Metal; Atmosphere + Steel; Atmosphere + Train; Atmosphere + Machine; Atmosphere + Car; Atmosphere + Boat; Atmosphere + Steamboat; Atmosphere + Pirate ship",
+    "tier": 5
+  },
+  {
+    "name": "Safe",
+    "recipe": "Metal + Money; Metal + Gold; Steel + Money; Steel + Gold; Container + Gun; Container + Gold",
+    "tier": 5
+  },
+  {
+    "name": "Salt",
+    "recipe": "Sea + Sun; Sea + Fire; Sea + Mineral; Ocean + Sun; Ocean + Fire; Ocean + Mineral",
+    "tier": 5
+  },
+  {
+    "name": "Scissors",
+    "recipe": "Blade + Blade; Blade + Paper; Blade + Sword; Sword + Sword; Sword + Paper",
+    "tier": 5
+  },
+  {
+    "name": "Sky",
+    "recipe": "Air + Cloud; Sun + Atmosphere; Sun + Moon; Cloud + Atmosphere",
+    "tier": 5
+  },
+  {
+    "name": "Solar cell",
+    "recipe": "Sun + Tool; Sun + Machine; Sun + Electricity; Sun + Energy; Tool + Light",
+    "tier": 5
+  },
+  {
+    "name": "Sound",
+    "recipe": "Wave + Air; Wave + Human; Wave + Animal; Wave + Wolf",
+    "tier": 5
+  },
+  {
+    "name": "Space station",
+    "recipe": "Space + House; Space + Wall; Space + Village; Atmosphere + House; Atmosphere + Wall; Atmosphere + Village",
+    "tier": 5
+  },
+  {
+    "name": "Supernova",
+    "recipe": "Explosion + Star; Explosion + Sun; Explosion + Galaxy; Explosion + Space",
+    "tier": 5
+  },
+  {
+    "name": "Swimming pool",
+    "recipe": "House + Lake; House + Swimmer; Aquarium + Big",
+    "tier": 5
+  },
+  {
+    "name": "Sword",
+    "recipe": "Blade + Metal; Blade + Steel; Blade + Wood",
+    "tier": 5
+  },
+  {
+    "name": "Telescope",
+    "recipe": "Glass + Sky; Glass + Star; Glass + Space; Glass + Moon; Glass + Planet; Glass + Mars; Glass + Mercury; Glass + Venus; Glass + Saturn; Glass + Jupiter; Glass + Galaxy; Glass + Galaxy cluster; Glass + Universe; Glass + Supernova",
+    "tier": 5
+  },
+  {
+    "name": "Tide",
+    "recipe": "Ocean + Moon; Ocean + Time; Sea + Moon; Sea + Time",
+    "tier": 5
+  },
+  {
+    "name": "Tsunami",
+    "recipe": "Sea + Earthquake; Sea + Explosion; Sea + Meteor; Ocean + Earthquake; Ocean + Explosion; Ocean + Meteor",
+    "tier": 5
+  },
+  {
+    "name": "Village",
+    "recipe": "House + House; Family + Family; House + Container; House + Bakery; Bakery + Container",
+    "tier": 5
+  },
+  {
+    "name": "Windmill",
+    "recipe": "Wind + House; Wind + Wheel; Wind + Wheat; Wind + Flour; Wheel + Wall",
+    "tier": 5
+  },
+  {
+    "name": "Acid rain",
+    "recipe": "Rain + Smoke; Rain + Smog; Rain + Sickness; Rain + City; Cloud + Smoke; Cloud + Smog; Cloud + Sickness",
+    "tier": 6
+  },
+  {
+    "name": "Archipelago",
+    "recipe": "Island + Island; Island + Sea; Island + Ocean",
+    "tier": 6
+  },
+  {
+    "name": "Barn",
+    "recipe": "House + Cow; House + Livestock; House + Hay; House + Farm; House + Field; House + Sheep; House + Goat; House + Babe the blue ox; Container + Livestock; Container + Cow; Container + Horse; Container + Pig; Container + Hay; Container + Sheep; Container + Hay bale; Container + Goat; Container + Babe the blue ox",
+    "tier": 6
+  },
+  {
+    "name": "Bayonet",
+    "recipe": "Gun + Blade; Gun + Sword; Gun + Axe",
+    "tier": 6
+  },
+  {
+    "name": "Bell",
+    "recipe": "Sound + Metal; Sound + Steel; Sound + Wood; Metal + Hammer; Steel + Hammer",
+    "tier": 6
+  },
+  {
+    "name": "Binoculars",
+    "recipe": "Telescope + Telescope; Glasses + Glasses",
+    "tier": 6
+  },
+  {
+    "name": "City",
+    "recipe": "Village + Village; Village + Skyscraper; Village + Big; Skyscraper + Skyscraper; Skyscraper + Container; Skyscraper + Bank; Skyscraper + Post office; Bank + Container; Bank + Post office",
+    "tier": 6
+  },
+  {
+    "name": "Day",
+    "recipe": "Sun + Sky; Sun + Night; Sun + Time; Time + Dawn",
+    "tier": 6
+  },
+  {
+    "name": "Double rainbow!",
+    "recipe": "Rainbow + Rainbow",
+    "tier": 6
+  },
+  {
+    "name": "Electricity",
+    "recipe": "Metal + Lightning; Steel + Lightning; Storm + Science; Wind turbine + Wind; Wind turbine + Motion; Wind turbine + Storm; Wind turbine + Sandstorm; Solar cell + Sun; Solar cell + Light; Solar cell + Star",
+    "tier": 6
+  },
+  {
+    "name": "Excalibur",
+    "recipe": "Sword + Stone; Sword + Legend; Sword + Story; Sword + Monarch; Sword + Lake; Sword + Fairy tale",
+    "tier": 6
+  },
+  {
+    "name": "Fence",
+    "recipe": "Wood + Wall; Wood + Field; Wood + Garden; Field + Wall; Grass + Wall; Garden + Wall",
+    "tier": 6
+  },
+  {
+    "name": "Flamethrower",
+    "recipe": "Gun + Fire; Gun + Campfire; Gun + Volcano",
+    "tier": 6
+  },
+  {
+    "name": "Fog",
+    "recipe": "Cloud + Earth; Cloud + Hill; Cloud + Mountain; Cloud + City; Cloud + Field; Cloud + Forest",
+    "tier": 6
+  },
+  {
+    "name": "Galaxy cluster",
+    "recipe": "Galaxy + Galaxy; Galaxy + Container",
+    "tier": 6
+  },
+  {
+    "name": "Hangar",
+    "recipe": "Airplane + Container; Airplane + House; Airplane + Wall; Airplane + Barn; Seaplane + Container; Seaplane + House; Seaplane + Wall; Seaplane + Barn; Helicopter + Container; Helicopter + House; Helicopter + Wall; Helicopter + Barn; Rocket + Container; Rocket + House; Rocket + Wall; Rocket + Barn; Spaceship + Container; Spaceship + House; Spaceship + Wall; Spaceship + Barn",
+    "tier": 6
+  },
+  {
+    "name": "Horizon",
+    "recipe": "Earth + Sky; Continent + Sky; Land + Sky; Lake + Sky; Ocean + Sky; Sea + Sky",
+    "tier": 6
+  },
+  {
+    "name": "Jupiter",
+    "recipe": "Planet + Cloud; Planet + Storm; Planet + Big; Planet + Gas; Planet + Zeus; Saturn + Big",
+    "tier": 6
+  },
+  {
+    "name": "Life",
+    "recipe": "Primordial soup + Electricity; Primordial soup + Time; Primordial soup + Storm; Primordial soup + Volcano; Primordial soup + Lightning; Primordial soup + Energy; Electricity + Ocean; Electricity + Sea; Electricity + Lake; Lightning + Ocean; Lightning + Sea; Lightning + Lake",
+    "tier": 6
+  },
+  {
+    "name": "Light sword",
+    "recipe": "Sword + Light; Sword + Electricity; Sword + Energy; Sword + Space; Sword + Force knight",
+    "tier": 6
+  },
+  {
+    "name": "Lightning",
+    "recipe": "Electricity + Cloud; Electricity + Storm; Electricity + Rain; Energy + Cloud; Energy + Storm; Energy + Rain; Land + Storm; Zeus + Tool; Cyclops + Tool",
+    "tier": 6
+  },
+  {
+    "name": "Meteor",
+    "recipe": "Meteoroid + Atmosphere; Meteoroid + Sky; Meteoroid + Air; Meteoroid + Night; Meteoroid + Day",
+    "tier": 6
+  },
+  {
+    "name": "Night",
+    "recipe": "Sky + Moon; Time + Moon; Time + Day; Time + Twilight",
+    "tier": 6
+  },
+  {
+    "name": "Paint",
+    "recipe": "Water + Rainbow; Water + Double rainbow!; Water + Pencil; Pottery + Rainbow; Pottery + Double rainbow!; Tool + Rainbow; Tool + Double rainbow!; Liquid + Rainbow; Liquid + Double rainbow!; Liquid + Pencil",
+    "tier": 6
+  },
+  {
+    "name": "Park",
+    "recipe": "City + Forest; City + Garden; City + Grass; City + Field; Village + Forest; Village + Garden; Village + Grass; Village + Field",
+    "tier": 6
+  },
+  {
+    "name": "Prism",
+    "recipe": "Glass + Rainbow; Glass + Double rainbow!; Crystal ball + Rainbow; Crystal ball + Double rainbow!",
+    "tier": 6
+  },
+  {
+    "name": "Rain",
+    "recipe": "Cloud + Heat; Cloud + Pressure; Cloud + Water",
+    "tier": 6
+  },
+  {
+    "name": "Ruins",
+    "recipe": "Time + Castle; Time + House; Time + Village; Time + City; Time + Skyscraper; Time + Hospital; Time + Farm",
+    "tier": 6
+  },
+  {
+    "name": "Safety glasses",
+    "recipe": "Glasses + Tool; Glasses + Explosion; Glasses + Engineer; Glasses + Bulletproof vest; Glasses + Armor",
+    "tier": 6
+  },
+  {
+    "name": "Skyscraper",
+    "recipe": "House + Sky; House + Big; House + Cloud; Village + Sky",
+    "tier": 6
+  },
+  {
+    "name": "Space",
+    "recipe": "Star + Sky; Star + Sun; Star + Moon; Solar system + Night; Solar system + Sky",
+    "tier": 6
+  },
+  {
+    "name": "Storm",
+    "recipe": "Cloud + Cloud; Electricity + Cloud; Electricity + Atmosphere; Rain + Wind",
+    "tier": 6
+  },
+  {
+    "name": "Stun gun",
+    "recipe": "Gun + Electricity; Gun + Wire; Gun + Energy; Bow + Electricity; Bow + Energy",
+    "tier": 6
+  },
+  {
+    "name": "Sunglasses",
+    "recipe": "Glasses + Sun; Glasses + Beach; Glasses + Day; Glasses + Sky; Glasses + Light",
+    "tier": 6
+  },
+  {
+    "name": "Swim goggles",
+    "recipe": "Glasses + Water; Glasses + Lake; Glasses + Sea; Glasses + Ocean; Glasses + River; Sunglasses + Water; Sunglasses + Lake; Sunglasses + Sea; Sunglasses + Ocean; Sunglasses + River",
+    "tier": 6
+  },
+  {
+    "name": "Water gun",
+    "recipe": "Gun + Water; Gun + Stream; Gun + Puddle",
+    "tier": 6
+  },
+  {
+    "name": "Alien",
+    "recipe": "Life + Space; Life + Galaxy; Life + Galaxy cluster; Life + Solar system; Life + Mars; Life + Venus; Life + Mercury; Life + Saturn; Life + Jupiter",
+    "tier": 7
+  },
+  {
+    "name": "Animal",
+    "recipe": "Life + Land; Life + Forest; Life + Mountain; Life + Mountain range; Life + Beach; Life + Desert",
+    "tier": 7
+  },
+  {
+    "name": "Bacteria",
+    "recipe": "Life + Primordial soup; Life + Small; Life + Mud",
+    "tier": 7
+  },
+  {
+    "name": "Clock",
+    "recipe": "Time + Electricity; Time + Wheel; Time + Tool; Time + Machine; Sundial + Machine; Sundial + Tool; Sundial + Wheel; Sundial + Electricity; Cuckoo + Container; Watch + Big",
+    "tier": 7
+  },
+  {
+    "name": "Darkness",
+    "recipe": "Sky + Night; Sky + Twilight",
+    "tier": 7
+  },
+  {
+    "name": "Dawn",
+    "recipe": "Day + Night; Time + Night",
+    "tier": 7
+  },
+  {
+    "name": "Death",
+    "recipe": "Time + Life; Corpse + Philosophy; Skeleton + Philosophy; Grave + Philosophy; Graveyard + Philosophy",
+    "tier": 7
+  },
+  {
+    "name": "Farm",
+    "recipe": "Farmer + House; Farmer + Barn; Farmer + Container; House + Barn; House + Tractor",
+    "tier": 7
+  },
+  {
+    "name": "Human",
+    "recipe": "Time + Animal; Time + Monkey; Clay + Life; Tool + Animal; Tool + Monkey",
+    "tier": 7
+  },
+  {
+    "name": "Light bulb",
+    "recipe": "Glass + Electricity; Glass + Light; Light + Container",
+    "tier": 7
+  },
+  {
+    "name": "Magic",
+    "recipe": "Life + Rainbow; Life + Double rainbow!; Energy + Witch; Energy + Wizard",
+    "tier": 7
+  },
+  {
+    "name": "Ozone",
+    "recipe": "Oxygen + Oxygen; Electricity + Oxygen; Electricity + Atmosphere; Electricity + Air",
+    "tier": 7
+  },
+  {
+    "name": "Phoenix",
+    "recipe": "Fire + Bird; Fire + Life; Fire + Death; Fire + Egg",
+    "tier": 7
+  },
+  {
+    "name": "Plankton",
+    "recipe": "Water + Life; Ocean + Life; Sea + Life; Bacteria + Water; Bacteria + Ocean; Bacteria + Sea",
+    "tier": 7
+  },
+  {
+    "name": "Robot",
+    "recipe": "Life + Armor; Life + Metal; Life + Steel; Golem + Armor; Golem + Metal; Golem + Steel",
+    "tier": 7
+  },
+  {
+    "name": "Smog",
+    "recipe": "Smoke + Fog; City + Smoke; City + Fog; City + Atmosphere; City + Air",
+    "tier": 7
+  },
+  {
+    "name": "Snow",
+    "recipe": "Rain + Cold; Rain + Mountain; Rain + Mountain range; Steam + Cold",
+    "tier": 7
+  },
+  {
+    "name": "Soil",
+    "recipe": "Earth + Life; Earth + Organic matter; Land + Life; Land + Organic matter",
+    "tier": 7
+  },
+  {
+    "name": "Spaceship",
+    "recipe": "Space + Airplane; Space + Metal; Space + Steel; Space + Pirate ship; Space + Boat; Space + Steamboat; Space + Car; Astronaut + Container",
+    "tier": 7
+  },
+  {
+    "name": "Star",
+    "recipe": "Night + Sky; Night + Telescope; Space + Telescope; Sky + Space; Night + Space; Sun + Space",
+    "tier": 7
+  },
+  {
+    "name": "Twilight",
+    "recipe": "Day + Night; Day + Time",
+    "tier": 7
+  },
+  {
+    "name": "Universe",
+    "recipe": "Space + Container; Galaxy cluster + Galaxy cluster; Galaxy cluster + Container; Primordial soup + Cosmic egg",
+    "tier": 7
+  },
+  {
+    "name": "Wind turbine",
+    "recipe": "Windmill + Electricity; Windmill + Machine; Windmill + Electrician; Wind + Electricity",
+    "tier": 7
+  },
+  {
+    "name": "Wire",
+    "recipe": "Metal + Electricity; Metal + Rope; Steel + Electricity; Steel + Rope; Electricity + Rope",
+    "tier": 7
+  },
+  {
+    "name": "Alarm clock",
+    "recipe": "Clock + Sound; Clock + Dawn; Clock + Bell; Watch + Sound; Watch + Dawn; Watch + Bell",
+    "tier": 8
+  },
+  {
+    "name": "Alchemist",
+    "recipe": "Human + Gold; Gold + Philosophy",
+    "tier": 8
+  },
+  {
+    "name": "Allergy",
+    "recipe": "Human + Dust; Human + Pollen",
+    "tier": 8
+  },
+  {
+    "name": "Antarctica",
+    "recipe": "Desert + Snow; Desert + Ice; Continent + Snow; Continent + Ice",
+    "tier": 8
+  },
+  {
+    "name": "Archeologist",
+    "recipe": "Ruins + Human; Ruins + Science",
+    "tier": 8
+  },
+  {
+    "name": "Astronaut",
+    "recipe": "Human + Space; Human + Spaceship; Human + Space station; Human + Rocket; Human + Moon; Human + Mars; Human + Solar system; Human + Mercury; Human + Jupiter; Human + Saturn; Human + Venus; Human + Moon rover",
+    "tier": 8
+  },
+  {
+    "name": "Astronomer",
+    "recipe": "Human + Telescope",
+    "tier": 8
+  },
+  {
+    "name": "Beaver",
+    "recipe": "Animal + Wood; Animal + Dam; Animal + River; Animal + Stream",
+    "tier": 8
+  },
+  {
+    "name": "Bird",
+    "recipe": "Animal + Sky; Animal + Air; Animal + Airplane; Egg + Sky; Egg + Air; Egg + Airplane; Time + Dinosaur; Time + Pterodactyl",
+    "tier": 8
+  },
+  {
+    "name": "Blizzard",
+    "recipe": "Snow + Storm; Snow + Hurricane; Snow + Tornado; Snow + Snow; Snow + Wind; Snow + Big",
+    "tier": 8
+  },
+  {
+    "name": "Blood",
+    "recipe": "Human + Blade; Warrior + Sword",
+    "tier": 8
+  },
+  {
+    "name": "Butterfly",
+    "recipe": "Animal + Flower; Animal + Garden; Animal + Rainbow; Animal + Double rainbow!",
+    "tier": 8
+  },
+  {
+    "name": "Cable car",
+    "recipe": "Mountain + Car; Mountain + Wire; Mountain + Rope; Mountain range + Car; Mountain range + Wire; Mountain range + Rope",
+    "tier": 8
+  },
+  {
+    "name": "Camel",
+    "recipe": "Desert + Horse; Desert + Animal; Desert + Livestock; Desert + Cow; Desert + Saddle; Desert + Horseshoe; Sand + Horse; Sand + Livestock; Sand + Cow; Dune + Animal; Dune + Horse; Dune + Livestock; Dune + Cow",
+    "tier": 8
+  },
+  {
+    "name": "Cat",
+    "recipe": "Animal + Milk; Animal + Coconut milk; Animal + Night",
+    "tier": 8
+  },
+  {
+    "name": "Chain",
+    "recipe": "Rope + Metal; Rope + Steel; Wire + Metal; Wire + Steel",
+    "tier": 8
+  },
+  {
+    "name": "Cold",
+    "recipe": "Human + Rain; Human + Mountain range; Human + Mountain; Human + Snow; Human + Wind; Human + Storm; Space + Thermometer",
+    "tier": 8
+  },
+  {
+    "name": "Constellation",
+    "recipe": "Star + Star",
+    "tier": 8
+  },
+  {
+    "name": "Corpse",
+    "recipe": "Human + Bullet; Human + Blade; Human + Death; Human + Grim reaper; Human + Time; Human + Explosion; Human + Arrow; Jiangshi + Mirror; Jiangshi + Peach of immortality",
+    "tier": 8
+  },
+  {
+    "name": "Crystal ball",
+    "recipe": "Glass + Witch; Glass + Wizard; Glass + Magic; Snow globe + Witch; Snow globe + Wizard; Snow globe + Magic",
+    "tier": 8
+  },
+  {
+    "name": "Cyborg",
+    "recipe": "Robot + Human; Robot + Engineer; Robot + Lumberjack; Robot + Sailor; Robot + Baker; Robot + Cook; Robot + Doctor; Robot + Farmer; Robot + Firefighter; Robot + Pilot; Robot + Astronaut; Robot + Electrician",
+    "tier": 8
+  },
+  {
+    "name": "Dew",
+    "recipe": "Grass + Fog; Grass + Water; Grass + Dawn; Plant + Fog; Plant + Dawn; Tree + Fog; Tree + Dawn; Water + Dawn; Fog + Dawn",
+    "tier": 8
+  },
+  {
+    "name": "Domestication",
+    "recipe": "Animal + Human; Animal + Farmer; Animal + Science; Farmer + Science",
+    "tier": 8
+  },
+  {
+    "name": "Dynamite",
+    "recipe": "Gunpowder + Wire; Gunpowder + Pipe; Gunpowder + Container",
+    "tier": 8
+  },
+  {
+    "name": "Egg",
+    "recipe": "Life + Container; Bird + Bird; Turtle + Turtle; Lizard + Lizard; Vulture + Vulture; Phoenix + Phoenix; Chicken + Chicken; Dragon + Dragon; Penguin + Penguin; Owl + Owl; Dinosaur + Dinosaur; Duck + Duck; Seagull + Seagull; Eagle + Eagle; Scorpion + Scorpion; Spider + Spider; Pigeon + Pigeon; Fish + Fish; Piranha + Piranha; Parrot + Parrot; Peacock + Peacock; Hummingbird + Hummingbird; Chameleon + Chameleon; Ostrich + Ostrich; Woodpecker + Woodpecker; Bee + Bee; Crow + Crow; Frog + Frog; Pterodactyl + Pterodactyl; Ant + Ant; Moth + Moth; Butterfly + Butterfly; Snake + Snake; Flying fish + Flying fish; Tyrannosaurus rex + Tyrannosaurus rex",
+    "tier": 8
+  },
+  {
+    "name": "Electrician",
+    "recipe": "Human + Electricity; Human + Wire",
+    "tier": 8
+  },
+  {
+    "name": "Family",
+    "recipe": "Human + Human; Human + House; Love + Container",
+    "tier": 8
+  },
+  {
+    "name": "Farmer",
+    "recipe": "Human + Plant; Human + Grass; Human + Pitchfork; Human + Field; Human + Barn; Human + Plow; Human + Orchard",
+    "tier": 8
+  },
+  {
+    "name": "Firefighter",
+    "recipe": "Human + Fire; Human + Firetruck; Human + Fire extinguisher",
+    "tier": 8
+  },
+  {
+    "name": "Fish",
+    "recipe": "Animal + Water; Animal + Sea; Animal + Ocean; Animal + Lake; Egg + Water; Egg + Sea; Egg + Ocean; Egg + Lake",
+    "tier": 8
+  },
+  {
+    "name": "Force knight",
+    "recipe": "Human + Light sword; Warrior + Light sword; Knight + Light sword",
+    "tier": 8
+  },
+  {
+    "name": "Frog",
+    "recipe": "Animal + Pond; Animal + Puddle; Egg + Pond; Egg + Puddle",
+    "tier": 8
+  },
+  {
+    "name": "Glacier",
+    "recipe": "Mountain + Ice; Mountain + Snow; Mountain range + Ice; Mountain range + Snow; Time + Ice",
+    "tier": 8
+  },
+  {
+    "name": "Gravestone",
+    "recipe": "Grave + Stone; Grave + Rock; Death + Stone; Death + Rock; Graveyard + Stone; Graveyard + Rock",
+    "tier": 8
+  },
+  {
+    "name": "Hacker",
+    "recipe": "Human + Computer; Human + Computer mouse; Human + Glasses; Human + Internet",
+    "tier": 8
+  },
+  {
+    "name": "Hero",
+    "recipe": "Human + Legend; Dragon + Knight; Human + Story; Human + Lightning",
+    "tier": 8
+  },
+  {
+    "name": "Horse",
+    "recipe": "Animal + Field; Animal + Horseshoe; Animal + Saddle; Animal + Land; Livestock + Hay; Livestock + Barn; Livestock + Horseshoe; Livestock + Saddle",
+    "tier": 8
+  },
+  {
+    "name": "Idea",
+    "recipe": "Human + Light bulb; Light bulb + Engineer; Light bulb + Science; Science + Science; Philosophy + Science; Engineer + Engineer; Hacker + Hacker; Lumberjack + Lumberjack; Farmer + Farmer; Firefighter + Firefighter; Electrician + Electrician; Astronaut + Astronaut; Warrior + Warrior; Butcher + Butcher; Doctor + Doctor; Pilot + Pilot; Baker + Baker; Sailor + Sailor; Surfer + Surfer; Swimmer + Swimmer; Cyclist + Cyclist; Knight + Knight; Monarch + Monarch; Angler + Angler; Mailman + Mailman; Gardener + Gardener; Philosophy + Philosophy; Skier + Skier; Diver + Diver; Librarian + Librarian; Alchemist + Alchemist",
+    "tier": 8
+  },
+  {
+    "name": "Igloo",
+    "recipe": "House + Ice; House + Cold; House + Snow; House + Snowman",
+    "tier": 8
+  },
+  {
+    "name": "Lamp",
+    "recipe": "Light bulb + Metal; Light bulb + Steel",
+    "tier": 8
+  },
+  {
+    "name": "Light",
+    "recipe": "Electricity + Light bulb; Electricity + Flashlight",
+    "tier": 8
+  },
+  {
+    "name": "Livestock",
+    "recipe": "Animal + Field; Animal + Farmer; Animal + Barn; Animal + Domestication",
+    "tier": 8
+  },
+  {
+    "name": "Lizard",
+    "recipe": "Stone + Animal; Rock + Animal; Swamp + Animal; Heat + Animal; Egg + Stone; Egg + Rock; Egg + Swamp; Dinosaur + Small; Blood + Cold",
+    "tier": 8
+  },
+  {
+    "name": "Love",
+    "recipe": "Human + Human; Cupid + Bow; Cupid + Arrow",
+    "tier": 8
+  },
+  {
+    "name": "Meat",
+    "recipe": "Tool + Livestock; Tool + Chicken; Tool + Pig; Tool + Cow; Tool + Animal; Tool + Fish; Tool + Swordfish; Tool + Flying fish; Tool + Shark; Tool + Frog; Axe + Livestock; Axe + Chicken; Axe + Pig; Axe + Cow; Axe + Animal; Axe + Fish; Axe + Swordfish; Axe + Flying fish; Axe + Shark; Axe + Frog; Sword + Livestock; Sword + Chicken; Sword + Pig; Sword + Cow; Sword + Animal; Sword + Shark; Butcher + Livestock; Butcher + Chicken; Butcher + Pig; Butcher + Cow; Butcher + Animal; Butcher + Fish; Butcher + Swordfish; Butcher + Flying fish; Butcher + Shark; Butcher + Frog; Net + Fish; Net + Swordfish; Net + Shark; Net + Piranha; Net + Flying fish",
+    "tier": 8
+  },
+  {
+    "name": "Microscope",
+    "recipe": "Bacteria + Glass; Bacteria + Glasses; Bacteria + Safety glasses; Bacteria + Lens; Tool + Lens",
+    "tier": 8
+  },
+  {
+    "name": "Monarch",
+    "recipe": "Human + Castle; Human + Excalibur",
+    "tier": 8
+  },
+  {
+    "name": "Mummy",
+    "recipe": "Pyramid + Corpse; Pyramid + Fabric; Pyramid + Human; Corpse + Fabric; Corpse + Book of the dead; Human + Book of the dead",
+    "tier": 8
+  },
+  {
+    "name": "Organic matter",
+    "recipe": "Life + Death; Life + Science; Bacteria + Death; Corpse + Science",
+    "tier": 8
+  },
+  {
+    "name": "Painter",
+    "recipe": "Human + Canvas; Human + Paint; Human + Painting",
+    "tier": 8
+  },
+  {
+    "name": "Pig",
+    "recipe": "Mud + Livestock; Mud + Animal; Mud + Cow",
+    "tier": 8
+  },
+  {
+    "name": "Plant",
+    "recipe": "Tree + Small; Seed + Water; Seed + Soil; Seed + Land; Seed + Earth; Grass + Big; Algae + Land; Algae + Earth; Life + Soil; Rain + Soil",
+    "tier": 8
+  },
+  {
+    "name": "Potter",
+    "recipe": "Human + Clay; Human + Pottery",
+    "tier": 8
+  },
+  {
+    "name": "Sailor",
+    "recipe": "Human + Boat; Human + Sailboat; Human + Steamboat; Human + Sea; Human + Ocean; Human + Lake",
+    "tier": 8
+  },
+  {
+    "name": "Samurai",
+    "recipe": "Human + Katana",
+    "tier": 8
+  },
+  {
+    "name": "Science",
+    "recipe": "Human + Telescope; Human + Microscope; Human + Universe",
+    "tier": 8
+  },
+  {
+    "name": "Scorpion",
+    "recipe": "Animal + Sand; Animal + Dune; Spider + Sand; Spider + Dune; Spider + Desert",
+    "tier": 8
+  },
+  {
+    "name": "Shuriken",
+    "recipe": "Star + Blade; Star + Sword; Star + Metal; Star + Steel; Ninja + Blade",
+    "tier": 8
+  },
+  {
+    "name": "Sickness",
+    "recipe": "Human + Bacteria; Human + Swamp; Human + Sickness",
+    "tier": 8
+  },
+  {
+    "name": "Ski goggles",
+    "recipe": "Snow + Glasses; Snow + Sunglasses; Cold + Glasses; Cold + Sunglasses; Glacier + Glasses; Glacier + Sunglasses; Skier + Glasses; Skier + Sunglasses",
+    "tier": 8
+  },
+  {
+    "name": "Skier",
+    "recipe": "Human + Ski goggles; Human + Mountain; Human + Mountain range",
+    "tier": 8
+  },
+  {
+    "name": "Sloth",
+    "recipe": "Animal + Time; Tree + Manatee",
+    "tier": 8
+  },
+  {
+    "name": "Snake",
+    "recipe": "Animal + Rope; Animal + Wire; Electric eel + Land",
+    "tier": 8
+  },
+  {
+    "name": "Snow globe",
+    "recipe": "Crystal ball + Ice; Crystal ball + Cold; Crystal ball + Snow; Crystal ball + Snowman; Crystal ball + Snowball; Crystal ball + Snowmobile; Crystal ball + Santa; Crystal ball + Christmas tree; Crystal ball + Christmas stocking; Crystal ball + Blizzard; Glass + Snow; Glass + Snowman; Glass + Snowball; Glass + Snowmobile; Glass + Santa; Glass + Christmas tree; Glass + Christmas stocking; Glass + Blizzard",
+    "tier": 8
+  },
+  {
+    "name": "Snowball",
+    "recipe": "Snow + Human; Snow + Stone; Snow + Rock; Snow + Earth",
+    "tier": 8
+  },
+  {
+    "name": "Snowman",
+    "recipe": "Snow + Human; Snow + Carrot; Snow + Coal; Snowball + Carrot; Snowball + Coal; Snowball + Snowball",
+    "tier": 8
+  },
+  {
+    "name": "Starfish",
+    "recipe": "Star + Fish; Star + Ocean; Star + Sea",
+    "tier": 8
+  },
+  {
+    "name": "Sundial",
+    "recipe": "Sun + Wheel; Sun + Tool; Sun + Clock; Sun + Watch; Light + Wheel; Light + Tool; Light + Clock; Light + Watch; Day + Wheel; Day + Tool",
+    "tier": 8
+  },
+  {
+    "name": "Surfer",
+    "recipe": "Human + Wave; Human + Beach",
+    "tier": 8
+  },
+  {
+    "name": "Swimmer",
+    "recipe": "Human + Water; Human + Swim goggles; Human + Pond; Human + Swimming pool",
+    "tier": 8
+  },
+  {
+    "name": "Tool",
+    "recipe": "Human + Metal; Human + Steel; Human + Wood; Human + Stone; Human + Rock; Wood + Metal; Wood + Steel; Wood + Stone; Wood + Rock",
+    "tier": 8
+  },
+  {
+    "name": "Turtle",
+    "recipe": "Egg + Sand; Egg + Beach; Animal + Beach",
+    "tier": 8
+  },
+  {
+    "name": "Ufo",
+    "recipe": "Alien + Rocket; Alien + Airplane; Alien + Spaceship; Alien + Space station; Alien + Sky; Alien + Container",
+    "tier": 8
+  },
+  {
+    "name": "Warrior",
+    "recipe": "Human + Sword; Human + Bow",
+    "tier": 8
+  },
+  {
+    "name": "Watch",
+    "recipe": "Clock + Human; Clock + Small",
+    "tier": 8
+  },
+  {
+    "name": "Wizard",
+    "recipe": "Human + Magic; Human + Unicorn; Human + Rainbow; Human + Double rainbow!",
+    "tier": 8
+  },
+  {
+    "name": "Wolf",
+    "recipe": "Animal + Moon; Animal + Dog; Dog + Forest; Dog + Blood",
+    "tier": 8
+  },
+  {
+    "name": "Airplane",
+    "recipe": "Bird + Metal; Bird + Steel; Bird + Machine; Bird + Steam engine; Bird + Train; Bird + Car; Bird + Boat; Bird + Steamboat; Bird + Sailboat; Owl + Metal; Owl + Steel; Owl + Machine; Owl + Steam engine; Vulture + Metal; Vulture + Steel; Vulture + Machine; Duck + Metal; Duck + Steel; Duck + Machine; Seagull + Metal; Seagull + Steel; Seagull + Machine; Bat + Metal; Bat + Steel; Bat + Machine; Eagle + Metal; Eagle + Steel; Eagle + Machine; Pigeon + Metal; Pigeon + Steel; Pigeon + Machine; Hummingbird + Metal; Hummingbird + Steel; Hummingbird + Machine; Crow + Metal; Crow + Steel; Crow + Machine; Pilot + Container",
+    "tier": 9
+  },
+  {
+    "name": "Algae",
+    "recipe": "Water + Plant; Water + Grass; Grass + Pond; Grass + Lake",
+    "tier": 9
+  },
+  {
+    "name": "Alligator",
+    "recipe": "Lizard + Swamp; Lizard + River; Lizard + Lake",
+    "tier": 9
+  },
+  {
+    "name": "Angel",
+    "recipe": "Human + Bird; Human + Light; Human + Heaven; Human + Good; Good + Demon; Good + Deity",
+    "tier": 9
+  },
+  {
+    "name": "Arctic",
+    "recipe": "Cold + Sea; Cold + Ocean",
+    "tier": 9
+  },
+  {
+    "name": "Ash",
+    "recipe": "Fire + Mineral; Fire + Plant; Fire + Tree; Fire + Grass; Fire + Paper; Campfire + Water; Campfire + Time; Campfire + Rain; Campfire + Paper; Vampire + Sun; Vampire + Dawn; Vampire + Holy grail; Vampire + Holy water",
+    "tier": 9
+  },
+  {
+    "name": "Bacon",
+    "recipe": "Pig + Fire; Pig + Campfire; Ham + Fire; Ham + Campfire",
+    "tier": 9
+  },
+  {
+    "name": "Birdcage",
+    "recipe": "Bird + Container; Bird + Safe; Bird + Wall; Bird + Cage",
+    "tier": 9
+  },
+  {
+    "name": "Birdhouse",
+    "recipe": "Bird + House; Bird + Wall; Egg + Container",
+    "tier": 9
+  },
+  {
+    "name": "Bone",
+    "recipe": "Time + Corpse; Vulture + Corpse; Vulture + Meat; Wolf + Corpse; Wolf + Meat",
+    "tier": 9
+  },
+  {
+    "name": "Butcher",
+    "recipe": "Human + Meat; Human + Ham",
+    "tier": 9
+  },
+  {
+    "name": "Cactus",
+    "recipe": "Sand + Plant; Sand + Tree; Desert + Plant; Desert + Tree",
+    "tier": 9
+  },
+  {
+    "name": "Cage",
+    "recipe": "Wolf + Metal; Wolf + Steel; Wolf + Wall; Fox + Metal; Fox + Steel; Fox + Wall; Lion + Metal; Lion + Steel; Lion + Wall; Hamster + Container; Hamster + House; Hamster + Wall",
+    "tier": 9
+  },
+  {
+    "name": "Carbon dioxide",
+    "recipe": "Human + Oxygen; Animal + Oxygen; Fish + Oxygen; Bird + Oxygen; Plant + Night; Tree + Night; Grass + Night",
+    "tier": 9
+  },
+  {
+    "name": "Carrot",
+    "recipe": "Vegetable + Snowman; Vegetable + Grass; Vegetable + Garden; Snowman + Sun",
+    "tier": 9
+  },
+  {
+    "name": "Castle",
+    "recipe": "Knight + Stone; Knight + Wall; Knight + House; Knight + Container; Warrior + Stone; Warrior + Wall; Warrior + House; Vampire + House; Vampire + Wall; Monarch + Container; Monarch + House; Monarch + Wall; Paladin + Stone; Paladin + Wall; Paladin + House; Paladin + Container",
+    "tier": 9
+  },
+  {
+    "name": "Catnip",
+    "recipe": "Cat + Plant; Cat + Grass; Cat + Flower; Baast + Plant",
+    "tier": 9
+  },
+  {
+    "name": "Cave",
+    "recipe": "House + Wolf; House + Lion; House + Fox; House + Bat; Container + Wolf; Container + Lion; Container + Fox; Container + Bat",
+    "tier": 9
+  },
+  {
+    "name": "Centaur",
+    "recipe": "Horse + Human; Horse + Story",
+    "tier": 9
+  },
+  {
+    "name": "Chameleon",
+    "recipe": "Lizard + Rainbow; Lizard + Double rainbow!; Snake + Rainbow; Snake + Double rainbow!; Turtle + Rainbow; Turtle + Double rainbow!",
+    "tier": 9
+  },
+  {
+    "name": "Charcoal",
+    "recipe": "Fire + Wood; Fire + Tree; Fire + Corpse; Fire + Organic matter",
+    "tier": 9
+  },
+  {
+    "name": "Chicken",
+    "recipe": "Bird + Domestication; Bird + Livestock; Bird + Farmer; Bird + Farm; Bird + Barn; Egg + Domestication; Egg + Livestock; Egg + Farmer; Egg + Barn; Egg + Farm",
+    "tier": 9
+  },
+  {
+    "name": "Chill",
+    "recipe": "Air + Cold; Human + Cold; Human + Ice",
+    "tier": 9
+  },
+  {
+    "name": "Coal",
+    "recipe": "Pressure + Organic matter; Earth + Peat; Stone + Peat; Rock + Peat; Time + Peat; Pressure + Peat",
+    "tier": 9
+  },
+  {
+    "name": "Computer",
+    "recipe": "Hacker + Tool; Hacker + Electricity; Hacker + Wire; Hacker + Machine; Email + Container",
+    "tier": 9
+  },
+  {
+    "name": "Cotton",
+    "recipe": "Plant + Cloud; Plant + Fabric; Plant + Thread; Plant + Wool; Plant + Sheep",
+    "tier": 9
+  },
+  {
+    "name": "Cow",
+    "recipe": "Livestock + Barn; Livestock + Field; Livestock + Farmer; Livestock + Grass",
+    "tier": 9
+  },
+  {
+    "name": "Crow",
+    "recipe": "Bird + Scarecrow; Bird + Field; Pigeon + Scarecrow; Pigeon + Field; Owl + Scarecrow; Owl + Field; Hummingbird + Scarecrow; Hummingbird + Field",
+    "tier": 9
+  },
+  {
+    "name": "Cuckoo",
+    "recipe": "Bird + Clock; Bird + Alarm clock; Owl + Clock; Owl + Alarm clock; Hummingbird + Clock; Hummingbird + Alarm clock",
+    "tier": 9
+  },
+  {
+    "name": "Dinosaur",
+    "recipe": "Lizard + Time; Lizard + Big",
+    "tier": 9
+  },
+  {
+    "name": "Dog",
+    "recipe": "Wolf + Domestication; Wolf + Farmer; Wolf + Farm; Wolf + Barn; Wolf + Field; Wolf + Bone; Wolf + Campfire",
+    "tier": 9
+  },
+  {
+    "name": "Don quixote",
+    "recipe": "Windmill + Knight; Windmill + Story; Windmill + Legend; Windmill + Hero",
+    "tier": 9
+  },
+  {
+    "name": "Dragon",
+    "recipe": "Lizard + Fire; Lizard + Air; Lizard + Sky; Lizard + Airplane; Lizard + Story; Lizard + Legend; Dinosaur + Monster",
+    "tier": 9
+  },
+  {
+    "name": "Duck",
+    "recipe": "Bird + Water; Bird + Pond; Bird + Lake; Duckling + Time; Duckling + Big; Owl + Water; Owl + Pond; Owl + Lake; Pigeon + Water; Pigeon + Pond; Pigeon + Lake; Chicken + Water; Chicken + Pond; Chicken + Lake",
+    "tier": 9
+  },
+  {
+    "name": "Eagle",
+    "recipe": "Bird + Mountain; Bird + Mountain range",
+    "tier": 9
+  },
+  {
+    "name": "Egg timer",
+    "recipe": "Egg + Clock; Egg + Alarm clock; Egg + Watch",
+    "tier": 9
+  },
+  {
+    "name": "Electric eel",
+    "recipe": "Fish + Electricity",
+    "tier": 9
+  },
+  {
+    "name": "Family tree",
+    "recipe": "Tree + Family; Tree + Village; Time + Family",
+    "tier": 9
+  },
+  {
+    "name": "Firestation",
+    "recipe": "House + Firefighter; House + Firetruck; Firefighter + Land; Firefighter + Village; Firefighter + City",
+    "tier": 9
+  },
+  {
+    "name": "Fishing rod",
+    "recipe": "Fish + Tool; Fish + Wood; Fish + Wire; Fish + Thread; Swordfish + Tool; Swordfish + Wood; Swordfish + Wire; Swordfish + Thread; Piranha + Tool; Piranha + Wood; Piranha + Wire; Piranha + Thread",
+    "tier": 9
+  },
+  {
+    "name": "Flashlight",
+    "recipe": "Tool + Light; Tool + Light bulb; Tool + Lamp; Human + Lamp",
+    "tier": 9
+  },
+  {
+    "name": "Flower",
+    "recipe": "Plant + Garden; Plant + Rainbow; Plant + Double rainbow!; Grass + Garden; Grass + Seed; Grass + Rainbow; Grass + Double rainbow!; Garden + Seed",
+    "tier": 9
+  },
+  {
+    "name": "Flying fish",
+    "recipe": "Fish + Bird; Fish + Sky; Fish + Air",
+    "tier": 9
+  },
+  {
+    "name": "Fossil",
+    "recipe": "Dinosaur + Earth; Dinosaur + Stone; Dinosaur + Rock; Dinosaur + Time; Bone + Time; Bone + Earth; Bone + Stone; Bone + Rock; Corpse + Stone; Corpse + Rock; Grave + Time; Skeleton + Earth; Skeleton + Stone; Skeleton + Rock; Skeleton + Time",
+    "tier": 9
+  },
+  {
+    "name": "Frankenstein's monster",
+    "recipe": "Corpse + Legend; Corpse + Lightning; Corpse + Electricity; Corpse + Story; Zombie + Electricity; Zombie + Lightning; Monster + Story; Monster + Corpse",
+    "tier": 9
+  },
+  {
+    "name": "Fridge",
+    "recipe": "Cold + Metal; Cold + Steel; Cold + Machine; Cold + Electricity; Cold + Container; Ice + Metal; Ice + Steel; Ice + Container; Ice cream + Container",
+    "tier": 9
+  },
+  {
+    "name": "Garden",
+    "recipe": "Plant + Grass; Plant + House; Plant + Lawn; Flower + Flower; Flower + Grass; Flower + Plant; Flower + House; Flower + Lawn; Flower + Container",
+    "tier": 9
+  },
+  {
+    "name": "Gas",
+    "recipe": "Air + Idea; Air + Science; Energy + Liquid",
+    "tier": 9
+  },
+  {
+    "name": "Ghost",
+    "recipe": "Graveyard + Night; Graveyard + Story; Graveyard + Legend; Graveyard + Curse; Grave + Night; Grave + Story; Grave + Legend; Grave + Curse; Gravestone + Night; Gravestone + Legend; Gravestone + Story; Castle + Night; Night + Story; Night + Legend",
+    "tier": 9
+  },
+  {
+    "name": "Goat",
+    "recipe": "Livestock + Mountain; Livestock + Mountain range; Livestock + Hill; Cow + Mountain; Cow + Mountain range; Cow + Hill",
+    "tier": 9
+  },
+  {
+    "name": "Grass",
+    "recipe": "Plant + Earth; Plant + Land",
+    "tier": 9
+  },
+  {
+    "name": "Grave",
+    "recipe": "Earth + Coffin; Earth + Corpse; Field + Coffin; Field + Corpse; Forest + Corpse; Forest + Coffin; Gravestone + Grave; Gravestone + Coffin; Coffin + Container",
+    "tier": 9
+  },
+  {
+    "name": "Graveyard",
+    "recipe": "Grave + Grave; Grave + Field; Grave + Land; Gravestone + Gravestone; Gravestone + Field; Gravestone + Land; Gravestone + Container",
+    "tier": 9
+  },
+  {
+    "name": "Greenhouse",
+    "recipe": "Glass + Plant; Glass + Grass; Glass + Tree; Glass + Garden; Aquarium + Plant; Aquarium + Tree; Aquarium + Grass; Plant + Container",
+    "tier": 9
+  },
+  {
+    "name": "Ham",
+    "recipe": "Smoke + Meat; Smoke + Pig",
+    "tier": 9
+  },
+  {
+    "name": "Hammer",
+    "recipe": "Tool + Metal; Tool + Steel; Tool + Stone; Tool + Rock; Tool + Woodpecker",
+    "tier": 9
+  },
+  {
+    "name": "Hedge",
+    "recipe": "Plant + Fence; Leaf + Fence; Garden + Fence; Plant + Wall; Leaf + Wall; Garden + Wall",
+    "tier": 9
+  },
+  {
+    "name": "Hippo",
+    "recipe": "Horse + River; Horse + Water; Cow + River; Cow + Water",
+    "tier": 9
+  },
+  {
+    "name": "Horseshoe",
+    "recipe": "Horse + Metal; Horse + Steel",
+    "tier": 9
+  },
+  {
+    "name": "Hospital",
+    "recipe": "House + Sickness; House + Ambulance; House + Doctor; Wall + Sickness; Wall + Ambulance; Wall + Doctor; Doctor + Container",
+    "tier": 9
+  },
+  {
+    "name": "Hummingbird",
+    "recipe": "Bird + Flower; Bird + Garden; Bird + Small; Bird + Bee; Bird + Butterfly; Flower + Owl; Flower + Pigeon; Flower + Seagull; Garden + Owl; Garden + Pigeon; Garden + Seagull",
+    "tier": 9
+  },
+  {
+    "name": "Ice",
+    "recipe": "Water + Cold; Water + Solid; Puddle + Cold; Puddle + Solid",
+    "tier": 9
+  },
+  {
+    "name": "Iceberg",
+    "recipe": "Sea + Ice; Sea + Antarctica; Sea + Arctic; Ocean + Ice; Ocean + Antarctica; Ocean + Arctic",
+    "tier": 9
+  },
+  {
+    "name": "Ivy",
+    "recipe": "Plant + Wall; Grass + Wall",
+    "tier": 9
+  },
+  {
+    "name": "Jerky",
+    "recipe": "Meat + Sun; Steak + Sun; Meat + Heat; Steak + Heat",
+    "tier": 9
+  },
+  {
+    "name": "Knight",
+    "recipe": "Human + Armor; Warrior + Armor; Warrior + Hero; Warrior + Horse",
+    "tier": 9
+  },
+  {
+    "name": "Lava lamp",
+    "recipe": "Lamp + Lava; Lamp + Fire; Lamp + Volcano",
+    "tier": 9
+  },
+  {
+    "name": "Leather",
+    "recipe": "Blade + Cow; Blade + Pig; Blade + Sheep; Sword + Cow; Sword + Pig; Sword + Sheep; Tool + Cow; Tool + Pig; Tool + Sheep",
+    "tier": 9
+  },
+  {
+    "name": "Lens",
+    "recipe": "Glass + Tool; Glass + Engineer",
+    "tier": 9
+  },
+  {
+    "name": "Lighthouse",
+    "recipe": "Light + House; Light + Ocean; Light + Sea; Light + Beach; Spotlight + House; Spotlight + Ocean; Spotlight + Sea; Spotlight + Beach",
+    "tier": 9
+  },
+  {
+    "name": "Lion",
+    "recipe": "Cat + Animal; Cat + Blood; Cat + Big; Cat + Monarch",
+    "tier": 9
+  },
+  {
+    "name": "Liquid",
+    "recipe": "Water + Science; Water + Idea; Energy + Solid",
+    "tier": 9
+  },
+  {
+    "name": "Machine",
+    "recipe": "Tool + Wheel; Tool + Tool; Tool + Chain; Tool + Engineer; Boiler + Wheel; Boiler + Tool; Boiler + Chain",
+    "tier": 9
+  },
+  {
+    "name": "Magma",
+    "recipe": "Lava + Science; Volcano + Science",
+    "tier": 9
+  },
+  {
+    "name": "Medusa",
+    "recipe": "Snake + Human; Snake + Story; Snake + Legend; Snake + Hero",
+    "tier": 9
+  },
+  {
+    "name": "Mermaid",
+    "recipe": "Fish + Human; Fish + Legend; Fish + Magic; Fish + Swimmer; Fish + Selkie; Swimmer + Magic",
+    "tier": 9
+  },
+  {
+    "name": "Mineral",
+    "recipe": "Organic matter + Stone; Organic matter + Rock; Organic matter + Earth; Organic matter + Boulder; Organic matter + Hill; Organic matter + Mountain",
+    "tier": 9
+  },
+  {
+    "name": "Moss",
+    "recipe": "Stone + Plant; Stone + Grass; Stone + Algae; Rock + Plant; Rock + Grass; Rock + Algae; Boulder + Plant; Boulder + Grass; Boulder + Algae",
+    "tier": 9
+  },
+  {
+    "name": "Moth",
+    "recipe": "Butterfly + Moon; Butterfly + Night; Butterfly + Candle; Butterfly + Light; Butterfly + Lamp; Butterfly + Flashlight",
+    "tier": 9
+  },
+  {
+    "name": "Motion",
+    "recipe": "Wind + Science; Wind + Idea; Wind + Philosophy; Tornado + Science; Tornado + Philosophy; Stream + Science; Stream + Philosophy; River + Science; River + Philosophy",
+    "tier": 9
+  },
+  {
+    "name": "Nest",
+    "recipe": "Bird + Tree; Bird + Hay; Bird + Grass; Bird + House; Egg + Hay; Egg + Tree; Egg + Grass; Egg + Container",
+    "tier": 9
+  },
+  {
+    "name": "Ninja",
+    "recipe": "Human + Shuriken",
+    "tier": 9
+  },
+  {
+    "name": "Ninja turtle",
+    "recipe": "Turtle + Ninja; Turtle + Shuriken; Turtle + Katana",
+    "tier": 9
+  },
+  {
+    "name": "Omelette",
+    "recipe": "Egg + Fire; Egg + Heat; Egg + Tool",
+    "tier": 9
+  },
+  {
+    "name": "Optical fiber",
+    "recipe": "Wire + Light; Rope + Light; Light + Internet",
+    "tier": 9
+  },
+  {
+    "name": "Ostrich",
+    "recipe": "Bird + Earth; Bird + Sand; Bird + Big",
+    "tier": 9
+  },
+  {
+    "name": "Owl",
+    "recipe": "Bird + Night; Bird + Wizard; Bird + Moon; Bird + Twilight",
+    "tier": 9
+  },
+  {
+    "name": "Oxygen",
+    "recipe": "Sun + Plant; Sun + Tree; Sun + Grass; Sun + Algae; Carbon dioxide + Plant; Carbon dioxide + Tree; Carbon dioxide + Grass; Carbon dioxide + Algae",
+    "tier": 9
+  },
+  {
+    "name": "Peacock",
+    "recipe": "Bird + Leaf; Bird + Rainbow; Bird + Double rainbow!",
+    "tier": 9
+  },
+  {
+    "name": "Pegasus",
+    "recipe": "Horse + Bird; Horse + Sky; Unicorn + Bird; Unicorn + Sky",
+    "tier": 9
+  },
+  {
+    "name": "Penguin",
+    "recipe": "Bird + Antarctica; Bird + Snow; Bird + Ice; Bird + Cold; Animal + Antarctica",
+    "tier": 9
+  },
+  {
+    "name": "Philosophy",
+    "recipe": "Human + Story; Human + Idea; Egg + Chicken",
+    "tier": 9
+  },
+  {
+    "name": "Pigeon",
+    "recipe": "Bird + City; Bird + Letter; Bird + Statue; Bird + Skyscraper; Bird + Village",
+    "tier": 9
+  },
+  {
+    "name": "Piggy bank",
+    "recipe": "Pig + Money; Pig + Pottery; Pig + Gold",
+    "tier": 9
+  },
+  {
+    "name": "Piranha",
+    "recipe": "Fish + Blood; Fish + Wolf",
+    "tier": 9
+  },
+  {
+    "name": "Pirate",
+    "recipe": "Sailor + Sword; Sailor + Bayonet; Sailor + Pirate ship; Sailor + Gun",
+    "tier": 9
+  },
+  {
+    "name": "Platypus",
+    "recipe": "Beaver + Duck; Beaver + Bird; Beaver + Seagull",
+    "tier": 9
+  },
+  {
+    "name": "Pollen",
+    "recipe": "Plant + Dust; Plant + Wind; Flower + Dust; Flower + Wind",
+    "tier": 9
+  },
+  {
+    "name": "Pottery",
+    "recipe": "Clay + Wheel; Clay + Tool",
+    "tier": 9
+  },
+  {
+    "name": "Reed",
+    "recipe": "Plant + Pond; Plant + Puddle; Plant + Swamp; Plant + River; Grass + Pond; Grass + Puddle; Grass + Swamp; Grass + River",
+    "tier": 9
+  },
+  {
+    "name": "Ring",
+    "recipe": "Diamond + Metal; Diamond + Steel; Diamond + Gold; Love + Gold; Love + Diamond; Love + Metal; Love + Steel",
+    "tier": 9
+  },
+  {
+    "name": "Roe",
+    "recipe": "Egg + Fish; Egg + Water; Egg + Ocean; Egg + Sea; Egg + Lake; Egg + Flying fish",
+    "tier": 9
+  },
+  {
+    "name": "Rope",
+    "recipe": "Thread + Thread; Thread + Wire; Wire + Tool; Tool + Boat; Tool + Sailboat; Tool + Pirate ship",
+    "tier": 9
+  },
+  {
+    "name": "Rose",
+    "recipe": "Love + Plant; Love + Flower; Blade + Plant; Blade + Flower",
+    "tier": 9
+  },
+  {
+    "name": "Saddle",
+    "recipe": "Horse + Leather; Horse + Tool; Horse + Fabric",
+    "tier": 9
+  },
+  {
+    "name": "Seagull",
+    "recipe": "Bird + Sea; Bird + Ocean; Bird + Beach; Pigeon + Sea; Pigeon + Ocean; Pigeon + Beach; Rat + Sea; Rat + Ocean; Rat + Beach",
+    "tier": 9
+  },
+  {
+    "name": "Seahorse",
+    "recipe": "Horse + Water; Horse + Sea; Horse + Ocean; Horse + Lake; Horse + Fish",
+    "tier": 9
+  },
+  {
+    "name": "Seasickness",
+    "recipe": "Sickness + Sea; Sickness + Ocean; Sickness + Lake; Sickness + Boat; Sickness + Sailboat; Sickness + Steamboat",
+    "tier": 9
+  },
+  {
+    "name": "Seaweed",
+    "recipe": "Plant + Sea; Plant + Ocean; Plant + Lake; Grass + Sea; Grass + Ocean",
+    "tier": 9
+  },
+  {
+    "name": "Shark",
+    "recipe": "Wolf + Sea; Wolf + Ocean; Wolf + Fish; Blood + Sea; Blood + Ocean; Blood + Fish",
+    "tier": 9
+  },
+  {
+    "name": "Sheep",
+    "recipe": "Livestock + Wool; Livestock + Hill; Livestock + Land; Livestock + Cloud; Goat + Domestication; Mountain goat + Domestication",
+    "tier": 9
+  },
+  {
+    "name": "Skeleton",
+    "recipe": "Time + Corpse; Bone + Bone; Bone + Corpse",
+    "tier": 9
+  },
+  {
+    "name": "Snowboard",
+    "recipe": "Snow + Wood; Snow + Surfer; Ice + Wood; Ice + Surfer; Surfer + Mountain; Surfer + Mountain range",
+    "tier": 9
+  },
+  {
+    "name": "Solid",
+    "recipe": "Earth + Idea; Earth + Science",
+    "tier": 9
+  },
+  {
+    "name": "Spotlight",
+    "recipe": "Light + Machine; Light + Metal; Light + Steel",
+    "tier": 9
+  },
+  {
+    "name": "Steak",
+    "recipe": "Meat + Bbq; Meat + Fire; Cow + Bbq; Cow + Fire",
+    "tier": 9
+  },
+  {
+    "name": "Stethoscope",
+    "recipe": "Doctor + Tool; Doctor + Drum; Doctor + Sound; Tool + Sound; Tool + Hospital",
+    "tier": 9
+  },
+  {
+    "name": "Story",
+    "recipe": "Human + Campfire; Human + Hero",
+    "tier": 9
+  },
+  {
+    "name": "Sunflower",
+    "recipe": "Sun + Plant; Sun + Flower",
+    "tier": 9
+  },
+  {
+    "name": "Swordfish",
+    "recipe": "Fish + Sword; Fish + Blade; Shark + Sword; Shark + Blade",
+    "tier": 9
+  },
+  {
+    "name": "Tobacco",
+    "recipe": "Plant + Fire; Plant + Smoke; Grass + Smoke",
+    "tier": 9
+  },
+  {
+    "name": "Toolbox",
+    "recipe": "Tool + Container; Tool + Safe; Tool + Box; Hammer + Container; Hammer + Box; Ruler + Container; Ruler + Box; Steel wool + Container; Steel wool + Box; Chain + Box; Chain + Container",
+    "tier": 9
+  },
+  {
+    "name": "Toucan",
+    "recipe": "Bird + Rainbow; Bird + Double rainbow!; Bird + Palm; Palm + Owl; Palm + Seagull; Palm + Pigeon",
+    "tier": 9
+  },
+  {
+    "name": "Tree",
+    "recipe": "Plant + Big; Plant + Wood; Plant + Time; Nest + Container",
+    "tier": 9
+  },
+  {
+    "name": "Umbrella",
+    "recipe": "Rain + Tool; Rain + Fabric; Storm + Tool; Storm + Fabric",
+    "tier": 9
+  },
+  {
+    "name": "Unicorn",
+    "recipe": "Horse + Legend; Horse + Story; Horse + Magic; Horse + Rainbow; Horse + Double rainbow!",
+    "tier": 9
+  },
+  {
+    "name": "Vampire",
+    "recipe": "Human + Blood; Human + Vampire; Human + Bat",
+    "tier": 9
+  },
+  {
+    "name": "Vegetable",
+    "recipe": "Farmer + Field; Farmer + Forest; Farmer + Plant; Plant + Field; Plant + Domestication",
+    "tier": 9
+  },
+  {
+    "name": "Vulture",
+    "recipe": "Corpse + Bird; Corpse + Eagle; Corpse + Owl; Corpse + Hummingbird; Corpse + Pigeon; Corpse + Penguin; Corpse + Chicken; Corpse + Duck; Desert + Bird; Desert + Eagle; Desert + Owl; Desert + Hummingbird; Desert + Pigeon; Desert + Penguin; Desert + Duck",
+    "tier": 9
+  },
+  {
+    "name": "Wand",
+    "recipe": "Wizard + Wood; Wizard + Sword; Wizard + Tool; Wizard + Pencil",
+    "tier": 9
+  },
+  {
+    "name": "Werewolf",
+    "recipe": "Human + Wolf; Human + Werewolf; Wolf + Monster",
+    "tier": 9
+  },
+  {
+    "name": "Wheel",
+    "recipe": "Motion + Tool; Motion + Stone; Motion + Metal; Motion + Steel; Tool + Water; Tool + Stream; Tool + River",
+    "tier": 9
+  },
+  {
+    "name": "Wild boar",
+    "recipe": "Pig + Animal; Pig + Forest; Pig + Hill",
+    "tier": 9
+  },
+  {
+    "name": "Windsurfer",
+    "recipe": "Wind + Surfer",
+    "tier": 9
+  },
+  {
+    "name": "Zombie",
+    "recipe": "Corpse + Life; Corpse + Story; Corpse + Bacteria; Human + Zombie; Corpse + Necromancer",
+    "tier": 9
+  },
+  {
+    "name": "Alpaca",
+    "recipe": "Sheep + Mountain; Sheep + Mountain range; Sheep + Mountain goat",
+    "tier": 10
+  },
+  {
+    "name": "Angler",
+    "recipe": "Human + Fishing rod; Sailor + Fishing rod",
+    "tier": 10
+  },
+  {
+    "name": "Ant",
+    "recipe": "Grass + Animal; Grass + Spider",
+    "tier": 10
+  },
+  {
+    "name": "Battery",
+    "recipe": "Container + Electricity; Container + Energy; Electricity + Mineral; Electricity + Ore",
+    "tier": 10
+  },
+  {
+    "name": "Bee",
+    "recipe": "Animal + Flower; Animal + Garden",
+    "tier": 10
+  },
+  {
+    "name": "Bicycle",
+    "recipe": "Wheel + Wheel; Wheel + Chain; Wheel + Machine",
+    "tier": 10
+  },
+  {
+    "name": "Big",
+    "recipe": "Universe + Philosophy; Galaxy + Philosophy; Galaxy cluster + Philosophy; Solar system + Philosophy; Sun + Philosophy; Planet + Philosophy",
+    "tier": 10
+  },
+  {
+    "name": "Bonsai tree",
+    "recipe": "Tree + Pottery; Tree + Scissors; Tree + Wire; Tree + Small",
+    "tier": 10
+  },
+  {
+    "name": "Cannon",
+    "recipe": "Gunpowder + Pirate ship; Gunpowder + Castle; Gun + Pirate ship; Gun + Castle",
+    "tier": 10
+  },
+  {
+    "name": "Car",
+    "recipe": "Wheel + Metal; Wheel + Steel; Wheel + Bicycle; Wheel + Motorcycle; Bicycle + Bicycle; Motorcycle + Motorcycle; Motorcycle + Machine; Wagon + Combustion engine; Cart + Combustion engine",
+    "tier": 10
+  },
+  {
+    "name": "Cauldron",
+    "recipe": "Witch + Metal; Witch + Steel; Witch + Fireplace; Witch + Campfire; Pottery + Metal; Pottery + Steel",
+    "tier": 10
+  },
+  {
+    "name": "Caviar",
+    "recipe": "Roe + Salt; Roe + Cook",
+    "tier": 10
+  },
+  {
+    "name": "Chicken coop",
+    "recipe": "Chicken + House; Chicken + Wall; Chicken + Barn; Chicken + Container; Cockatrice + House; Cockatrice + Barn; Cockatrice + Container",
+    "tier": 10
+  },
+  {
+    "name": "Chicken soup",
+    "recipe": "Chicken + Water; Chicken + Liquid; Chicken wing + Water; Chicken wing + Liquid",
+    "tier": 10
+  },
+  {
+    "name": "Chicken wing",
+    "recipe": "Chicken + Bone; Chicken + Bbq",
+    "tier": 10
+  },
+  {
+    "name": "Christmas tree",
+    "recipe": "Tree + Light bulb; Tree + Star; Tree + Candle; Tree + Light; Tree + Gift",
+    "tier": 10
+  },
+  {
+    "name": "Coconut",
+    "recipe": "Palm + Fruit; Palm + Nuts; Palm + Vegetable; Palm + Meat; Beach + Fruit; Beach + Vegetable",
+    "tier": 10
+  },
+  {
+    "name": "Combustion engine",
+    "recipe": "Petroleum + Machine; Petroleum + Wheel; Petroleum + Steam engine; Explosion + Machine; Explosion + Steam engine",
+    "tier": 10
+  },
+  {
+    "name": "Computer mouse",
+    "recipe": "Computer + Mouse; Computer + Animal",
+    "tier": 10
+  },
+  {
+    "name": "Container",
+    "recipe": "Philosophy + Safe; Philosophy + Pottery; Philosophy + House; Philosophy + Box; Philosophy + Bottle; Philosophy + Bucket",
+    "tier": 10
+  },
+  {
+    "name": "Cook",
+    "recipe": "Human + Fruit; Human + Vegetable; Human + Campfire; Human + Nuts",
+    "tier": 10
+  },
+  {
+    "name": "Coral",
+    "recipe": "Tree + Sea; Tree + Ocean; Fossil + Sea; Fossil + Ocean; Bone + Sea; Bone + Ocean",
+    "tier": 10
+  },
+  {
+    "name": "Cyclist",
+    "recipe": "Human + Wheel; Human + Bicycle",
+    "tier": 10
+  },
+  {
+    "name": "Diamond",
+    "recipe": "Coal + Pressure",
+    "tier": 10
+  },
+  {
+    "name": "Doctor",
+    "recipe": "Human + Hospital; Human + Stethoscope",
+    "tier": 10
+  },
+  {
+    "name": "Doge",
+    "recipe": "Dog + Internet; Dog + Computer",
+    "tier": 10
+  },
+  {
+    "name": "Doghouse",
+    "recipe": "Dog + House; Dog + Wall; Dog + Container; Husky + House; Husky + Wall; Husky + Container",
+    "tier": 10
+  },
+  {
+    "name": "Drone",
+    "recipe": "Robot + Airplane; Robot + Helicopter; Robot + Paper airplane; Robot + Seaplane",
+    "tier": 10
+  },
+  {
+    "name": "Dry ice",
+    "recipe": "Carbon dioxide + Cold; Carbon dioxide + Ice",
+    "tier": 10
+  },
+  {
+    "name": "Duckling",
+    "recipe": "Egg + Duck",
+    "tier": 10
+  },
+  {
+    "name": "Engineer",
+    "recipe": "Human + Machine; Human + Steam engine",
+    "tier": 10
+  },
+  {
+    "name": "Fairy tale",
+    "recipe": "Story + Monarch; Story + Castle; Story + Knight; Story + Dragon; Story + Unicorn; Story + Faerie; Story + Elf",
+    "tier": 10
+  },
+  {
+    "name": "Faun",
+    "recipe": "Human + Goat; Human + Mountain goat; Legend + Goat; Legend + Mountain goat; Wizard + Goat; Wizard + Mountain goat; Magic + Goat; Magic + Mountain goat",
+    "tier": 10
+  },
+  {
+    "name": "Fire extinguisher",
+    "recipe": "Carbon dioxide + Fire; Carbon dioxide + Pressure; Carbon dioxide + Metal; Carbon dioxide + Steel; Carbon dioxide + Boiler",
+    "tier": 10
+  },
+  {
+    "name": "Forest",
+    "recipe": "Tree + Tree; Tree + Plant; Tree + Land; Tree + Container",
+    "tier": 10
+  },
+  {
+    "name": "Fox",
+    "recipe": "Chicken + Animal; Chicken + Wolf; Chicken + Dog; Chicken coop + Animal; Chicken coop + Wolf; Chicken coop + Dog",
+    "tier": 10
+  },
+  {
+    "name": "Fruit",
+    "recipe": "Flower + Time; Flower + Rain; Flower + Water; Flower + Tree; Tree + Farmer; Farmer + Orchard",
+    "tier": 10
+  },
+  {
+    "name": "Gardener",
+    "recipe": "Human + Garden; Farmer + Garden",
+    "tier": 10
+  },
+  {
+    "name": "Gnome",
+    "recipe": "Garden + Statue; Garden + Legend; Garden + Story; Garden + Fairy tale",
+    "tier": 10
+  },
+  {
+    "name": "Golem",
+    "recipe": "Clay + Story; Clay + Legend; Story + Statue; Statue + Life; Statue + Legend",
+    "tier": 10
+  },
+  {
+    "name": "Hail",
+    "recipe": "Ice + Rain; Ice + Cloud; Ice + Storm; Ice + Wind; Ice + Steam; Ice + Sky",
+    "tier": 10
+  },
+  {
+    "name": "Harp",
+    "recipe": "Angel + Music; Angel + Musician; Angel + Wire; Wire + Music",
+    "tier": 10
+  },
+  {
+    "name": "Hay",
+    "recipe": "Grass + Scythe; Grass + Farmer; Grass + Sun; Grass + Grass; Grass + Barn; Grass + Farm; Grass + Pitchfork; Pitchfork + Barn; Pitchfork + Farm; Pitchfork + Farmer",
+    "tier": 10
+  },
+  {
+    "name": "Helicopter",
+    "recipe": "Airplane + Blade; Airplane + Windmill; Airplane + Wind turbine; Seaplane + Blade; Seaplane + Windmill; Seaplane + Wind turbine",
+    "tier": 10
+  },
+  {
+    "name": "Husky",
+    "recipe": "Dog + Snow; Dog + Ice; Dog + Antarctica; Dog + Arctic; Dog + Blizzard; Dog + Glacier",
+    "tier": 10
+  },
+  {
+    "name": "Internet",
+    "recipe": "Computer + Computer; Computer + Wire; Computer + Web; Computer + Net",
+    "tier": 10
+  },
+  {
+    "name": "Jack-o'-lantern",
+    "recipe": "Pumpkin + Fire; Pumpkin + Candle; Pumpkin + Light; Pumpkin + Night; Pumpkin + Ghost; Pumpkin + Skeleton; Vegetable + Ghost; Vegetable + Skeleton; Vegetable + Night",
+    "tier": 10
+  },
+  {
+    "name": "Juice",
+    "recipe": "Fruit + Pressure; Fruit + Earth; Fruit + Stone; Fruit + Rock; Fruit + Explosion; Fruit + Water; Vegetable + Pressure; Vegetable + Stone; Vegetable + Rock; Vegetable + Explosion; Vegetable + Water",
+    "tier": 10
+  },
+  {
+    "name": "Kaiju",
+    "recipe": "Dinosaur + City; Dinosaur + Skyscraper; Dinosaur + Legend; Dinosaur + Story; Monster + City; Monster + Skyscraper",
+    "tier": 10
+  },
+  {
+    "name": "Lasso",
+    "recipe": "Rope + Cow; Rope + Horse; Rope + Pig; Rope + Wild boar; Rope + Sheep; Rope + Goat",
+    "tier": 10
+  },
+  {
+    "name": "Lawn",
+    "recipe": "Grass + House; Grass + Container; Grass + Lawn mower; Field + Lawn mower",
+    "tier": 10
+  },
+  {
+    "name": "Lawn mower",
+    "recipe": "Grass + Tool; Grass + Machine; Scythe + Electricity; Scythe + Helicopter; Scythe + Windmill; Scythe + Tool; Scythe + Machine; Scythe + Motion; Helicopter + Field",
+    "tier": 10
+  },
+  {
+    "name": "Leaf",
+    "recipe": "Tree + Wind; Flower + Wind; Orchard + Wind; Forest + Wind",
+    "tier": 10
+  },
+  {
+    "name": "Legend",
+    "recipe": "Story + Time; Story + Story; Story + Big; Story + Fairy tale; Fairy tale + Time; Fairy tale + Big",
+    "tier": 10
+  },
+  {
+    "name": "Lumberjack",
+    "recipe": "Human + Axe; Human + Chainsaw; Human + Wood; Human + Tree",
+    "tier": 10
+  },
+  {
+    "name": "Manatee",
+    "recipe": "Cow + Sea; Cow + Ocean; Cow + Fish; Cow + Lake; Cow + River",
+    "tier": 10
+  },
+  {
+    "name": "Milk",
+    "recipe": "Cow + Farmer; Cow + Tool; Cow + Water; Cow + Liquid; Goat + Farmer; Goat + Tool; Goat + Water; Goat + Liquid",
+    "tier": 10
+  },
+  {
+    "name": "Minotaur",
+    "recipe": "Human + Cow; Cow + Werewolf; Cow + Story; Cow + Legend; Cow + Monster",
+    "tier": 10
+  },
+  {
+    "name": "Mold",
+    "recipe": "Bread + Time; Bread + Bacteria; Fruit + Time; Fruit + Bacteria; Vegetable + Time; Vegetable + Bacteria",
+    "tier": 10
+  },
+  {
+    "name": "Monkey",
+    "recipe": "Animal + Tree",
+    "tier": 10
+  },
+  {
+    "name": "Mountain goat",
+    "recipe": "Goat + Mountain; Goat + Mountain range",
+    "tier": 10
+  },
+  {
+    "name": "Narwhal",
+    "recipe": "Unicorn + Fish; Unicorn + Sea; Unicorn + Ocean; Unicorn + Water; Unicorn + Shark; Unicorn + Swordfish; Unicorn + Flying fish",
+    "tier": 10
+  },
+  {
+    "name": "Nessie",
+    "recipe": "Lake + Legend; Lake + Story; Dinosaur + Legend; Dinosaur + Story",
+    "tier": 10
+  },
+  {
+    "name": "Net",
+    "recipe": "Angler + Rope; Fishing rod + Rope; Fish + Rope; Swordfish + Rope; Flying fish + Rope",
+    "tier": 10
+  },
+  {
+    "name": "Nuts",
+    "recipe": "Tree + Farmer; Tree + Field; Tree + Domestication",
+    "tier": 10
+  },
+  {
+    "name": "Oil",
+    "recipe": "Sunflower + Pressure; Sunflower + Stone; Sunflower + Wheel; Sunflower + Windmill",
+    "tier": 10
+  },
+  {
+    "name": "Ore",
+    "recipe": "Hammer + Boulder; Hammer + Earth; Hammer + Rock; Hammer + Stone; Hammer + Hill; Hammer + Mountain",
+    "tier": 10
+  },
+  {
+    "name": "Paleontologist",
+    "recipe": "Human + Dinosaur; Human + Fossil; Science + Dinosaur; Science + Fossil",
+    "tier": 10
+  },
+  {
+    "name": "Palm",
+    "recipe": "Tree + Beach; Tree + Island; Tree + Sand",
+    "tier": 10
+  },
+  {
+    "name": "Parachute",
+    "recipe": "Pilot + Fabric; Pilot + Umbrella; Airplane + Fabric; Airplane + Umbrella; Umbrella + Sky; Umbrella + Atmosphere",
+    "tier": 10
+  },
+  {
+    "name": "Parrot",
+    "recipe": "Bird + Pirate; Bird + Pirate ship; Pigeon + Pirate; Pigeon + Pirate ship",
+    "tier": 10
+  },
+  {
+    "name": "Peat",
+    "recipe": "Swamp + Plant; Swamp + Time; Swamp + Pressure; Time + Grass",
+    "tier": 10
+  },
+  {
+    "name": "Perfume",
+    "recipe": "Flower + Water; Flower + Steam; Flower + Alcohol; Rose + Water; Rose + Steam; Rose + Alcohol; Sunflower + Water; Sunflower + Steam; Sunflower + Alcohol",
+    "tier": 10
+  },
+  {
+    "name": "Petroleum",
+    "recipe": "Fossil + Pressure; Fossil + Time; Fossil + Liquid; Fossil + Water",
+    "tier": 10
+  },
+  {
+    "name": "Pilot",
+    "recipe": "Human + Airplane; Human + Seaplane",
+    "tier": 10
+  },
+  {
+    "name": "Pipe",
+    "recipe": "Tobacco + Wood; Tobacco + Tool",
+    "tier": 10
+  },
+  {
+    "name": "Pirate ship",
+    "recipe": "Sailboat + Pirate; Boat + Pirate; Steam engine + Pirate; Pirate + Container; Pirate + House",
+    "tier": 10
+  },
+  {
+    "name": "Polar bear",
+    "recipe": "Animal + Ice; Animal + Arctic",
+    "tier": 10
+  },
+  {
+    "name": "Potato",
+    "recipe": "Earth + Vegetable",
+    "tier": 10
+  },
+  {
+    "name": "Pterodactyl",
+    "recipe": "Dinosaur + Air; Dinosaur + Sky; Dinosaur + Bird; Dinosaur + Eagle; Dinosaur + Vulture; Dinosaur + Airplane",
+    "tier": 10
+  },
+  {
+    "name": "Pumpkin",
+    "recipe": "Vegetable + Field; Vegetable + Farmer; Vegetable + Jack-o'-lantern; Plant + Jack-o'-lantern",
+    "tier": 10
+  },
+  {
+    "name": "Quicksilver",
+    "recipe": "Metal + Liquid",
+    "tier": 10
+  },
+  {
+    "name": "Rabbit",
+    "recipe": "Animal + Carrot; Rabbit + Rabbit",
+    "tier": 10
+  },
+  {
+    "name": "Rivulet",
+    "recipe": "Stream + Small; Puddle + Motion",
+    "tier": 10
+  },
+  {
+    "name": "Sand castle",
+    "recipe": "Castle + Sand; Castle + Beach; Castle + Desert; Castle + Dune",
+    "tier": 10
+  },
+  {
+    "name": "Sap",
+    "recipe": "Tree + Blade",
+    "tier": 10
+  },
+  {
+    "name": "Saturn",
+    "recipe": "Ring + Planet; Jupiter + Small",
+    "tier": 10
+  },
+  {
+    "name": "Scalpel",
+    "recipe": "Blade + Doctor; Blade + Hospital; Blade + Ambulance; Sword + Doctor; Sword + Hospital; Sword + Ambulance",
+    "tier": 10
+  },
+  {
+    "name": "Scythe",
+    "recipe": "Blade + Grass; Blade + Wheat; Sword + Grass; Sword + Wheat; Axe + Grass; Axe + Wheat",
+    "tier": 10
+  },
+  {
+    "name": "Seal",
+    "recipe": "Dog + Sea; Dog + Ocean; Dog + Arctic; Dog + Water; Dog + Lake",
+    "tier": 10
+  },
+  {
+    "name": "Seaplane",
+    "recipe": "Airplane + Water; Airplane + Sea; Airplane + Ocean; Airplane + Lake",
+    "tier": 10
+  },
+  {
+    "name": "Seed",
+    "recipe": "Pollen + Plant; Pollen + Bee; Time + Flower",
+    "tier": 10
+  },
+  {
+    "name": "Skateboard",
+    "recipe": "Wheel + Snowboard; Wheel + Skier; Wheel + Ski goggles",
+    "tier": 10
+  },
+  {
+    "name": "Small",
+    "recipe": "Philosophy + Bacteria; Philosophy + Oxygen; Philosophy + Carbon dioxide; Philosophy + Ozone; Philosophy + Pebble; Philosophy + Rivulet; Philosophy + Ant; Philosophy + Spider; Philosophy + Bee; Philosophy + Scorpion; Philosophy + Confetti; Philosophy + Seahorse",
+    "tier": 10
+  },
+  {
+    "name": "Snowboarder",
+    "recipe": "Human + Snowboard",
+    "tier": 10
+  },
+  {
+    "name": "Soda",
+    "recipe": "Carbon dioxide + Water; Carbon dioxide + Juice; Carbon dioxide + Tea",
+    "tier": 10
+  },
+  {
+    "name": "Sphinx",
+    "recipe": "Statue + Lion; Statue + Desert; Statue + Pyramid; Lion + Stone",
+    "tier": 10
+  },
+  {
+    "name": "Statue",
+    "recipe": "Stone + Hammer; Boulder + Hammer; Medusa + Human; Medusa + Hacker; Medusa + Engineer; Medusa + Lumberjack; Medusa + Pilot; Medusa + Sailor; Medusa + Farmer; Medusa + Firefighter; Medusa + Surfer; Medusa + Astronaut; Medusa + Butcher; Medusa + Doctor; Medusa + Baker; Medusa + Drunk; Medusa + Mirror; Troll + Sun; Troll + Dawn; Cockatrice + Human; Cockatrice + Hacker; Cockatrice + Engineer; Cockatrice + Lumberjack; Cockatrice + Pilot; Cockatrice + Sailor; Cockatrice + Farmer; Cockatrice + Firefighter; Cockatrice + Surfer; Cockatrice + Astronaut; Cockatrice + Butcher; Cockatrice + Doctor; Cockatrice + Baker; Cockatrice + Drunk; Cockatrice + Mirror",
+    "tier": 10
+  },
+  {
+    "name": "Steam engine",
+    "recipe": "Steam + Machine; Steam + Wheel; Boiler + Wheel",
+    "tier": 10
+  },
+  {
+    "name": "Steel",
+    "recipe": "Metal + Coal; Metal + Charcoal; Metal + Mineral; Metal + Ash",
+    "tier": 10
+  },
+  {
+    "name": "Stream",
+    "recipe": "Pond + Motion; Rivulet + Big; River + Small",
+    "tier": 10
+  },
+  {
+    "name": "Sushi",
+    "recipe": "Fish + Seaweed; Caviar + Seaweed",
+    "tier": 10
+  },
+  {
+    "name": "Swamp",
+    "recipe": "Mud + Grass; Mud + Tree; Tree + Lake; Algae + Lake; Algae + Pond; Reed + Lake; Reed + Pond; Reed + Mud",
+    "tier": 10
+  },
+  {
+    "name": "The one ring",
+    "recipe": "Ring + Volcano; Ring + Magic",
+    "tier": 10
+  },
+  {
+    "name": "Thread",
+    "recipe": "Cotton + Cotton; Cotton + Tool; Cotton + Wheel; Cotton + Machine",
+    "tier": 10
+  },
+  {
+    "name": "Treehouse",
+    "recipe": "Tree + House; Tree + Wood",
+    "tier": 10
+  },
+  {
+    "name": "Trojan horse",
+    "recipe": "Horse + Wood; Horse + Machine; Horse + Statue",
+    "tier": 10
+  },
+  {
+    "name": "Tunnel",
+    "recipe": "Engineer + Mountain; Engineer + Mountain range; Engineer + Hill; Train + Mountain; Train + Mountain range; Train + Hill; Cave + Mountain; Cave + Mountain range; Cave + Hill",
+    "tier": 10
+  },
+  {
+    "name": "Tyrannosaurus rex",
+    "recipe": "Dinosaur + Meat; Dinosaur + Blood; Dinosaur + Monarch",
+    "tier": 10
+  },
+  {
+    "name": "Vase",
+    "recipe": "Pottery + Plant; Pottery + Flower; Pottery + Rose; Container + Flower; Container + Rose; Bottle + Plant; Bottle + Flower; Bottle + Rose",
+    "tier": 10
+  },
+  {
+    "name": "Water lily",
+    "recipe": "Flower + Pond; Flower + Puddle; Flower + Lake; Flower + Stream",
+    "tier": 10
+  },
+  {
+    "name": "Wheat",
+    "recipe": "Grass + Farmer; Grass + Domestication; Grass + Field",
+    "tier": 10
+  },
+  {
+    "name": "Wood",
+    "recipe": "Tree + Tool; Tree + Axe; Tree + Chainsaw; Tree + Sword; Tree + Lumberjack; Forest + Tool; Forest + Axe; Forest + Chainsaw; Forest + Sword; Forest + Lumberjack; Tree + Paul bunyan; Forest + Paul bunyan",
+    "tier": 10
+  },
+  {
+    "name": "Woodpecker",
+    "recipe": "Bird + Wood; Bird + Tree; Bird + Forest",
+    "tier": 10
+  },
+  {
+    "name": "Wool",
+    "recipe": "Sheep + Tool; Sheep + Scissors; Sheep + Blade",
+    "tier": 10
+  },
+  {
+    "name": "Yeti",
+    "recipe": "Mountain + Story; Mountain + Legend; Mountain range + Story; Mountain range + Legend; Glacier + Story; Glacier + Legend; Antarctica + Story; Antarctica + Legend; Monster + Mountain; Monster + Mountain range; Monster + Glacier; Monster + Antarctica",
+    "tier": 10
+  },
+  {
+    "name": "Zoo",
+    "recipe": "Animal + Container; Animal + Cage",
+    "tier": 10
+  },
+  {
+    "name": "Alcohol",
+    "recipe": "Time + Juice; Wheat + Fruit; Wheat + Juice; Fruit + Sun",
+    "tier": 11
+  },
+  {
+    "name": "Ambulance",
+    "recipe": "Car + Hospital; Car + Doctor",
+    "tier": 11
+  },
+  {
+    "name": "Ant farm",
+    "recipe": "Farm + Ant; Ant + Jar; Ant + Glass; Anthill + Farm; Anthill + Jar",
+    "tier": 11
+  },
+  {
+    "name": "Anthill",
+    "recipe": "Ant + House; Ant + Container; Ant + Hill; Ant + Earth; Ant + Land; Ant + Soil",
+    "tier": 11
+  },
+  {
+    "name": "Arrow",
+    "recipe": "Wood + Bullet; Wood + Bow",
+    "tier": 11
+  },
+  {
+    "name": "Aviary",
+    "recipe": "Big + Birdcage",
+    "tier": 11
+  },
+  {
+    "name": "Axe",
+    "recipe": "Wood + Blade; Wood + Tool; Wood + Stone; Tool + Lumberjack; Tool + Paul bunyan",
+    "tier": 11
+  },
+  {
+    "name": "Banana",
+    "recipe": "Fruit + Monkey",
+    "tier": 11
+  },
+  {
+    "name": "Beehive",
+    "recipe": "House + Bee; Tree + Bee; Forest + Bee; Wall + Bee; Wood + Bee; Container + Bee",
+    "tier": 11
+  },
+  {
+    "name": "Beekeeper",
+    "recipe": "Human + Beehive; Human + Bee; Farmer + Beehive; Farmer + Bee",
+    "tier": 11
+  },
+  {
+    "name": "Blood bag",
+    "recipe": "Blood + Container; Blood + Sack; Blood + Bottle",
+    "tier": 11
+  },
+  {
+    "name": "Boat",
+    "recipe": "Wood + Water; Wood + Sea; Wood + Ocean; Wood + Lake; Wood + River",
+    "tier": 11
+  },
+  {
+    "name": "Book",
+    "recipe": "Newspaper + Newspaper; Paper + Legend; Paper + Wood; Container + Story; Container + Fairy tale; Container + Legend; Container + Idea",
+    "tier": 11
+  },
+  {
+    "name": "Bottle",
+    "recipe": "Container + Milk; Container + Water; Container + Coconut milk; Container + Juice; Container + Oil; Container + Alcohol; Container + Wine; Container + Beer; Container + Chocolate milk; Container + Soda; Container + Perfume; Container + Liquid",
+    "tier": 11
+  },
+  {
+    "name": "Boulder",
+    "recipe": "Big + Rock; Big + Stone; Small + Hill; Rock + Stone; Rock + Rock; Rock + Earth",
+    "tier": 11
+  },
+  {
+    "name": "Bow",
+    "recipe": "Wood + Rope; Wood + Wire; Tool + Elf; Tool + Cupid",
+    "tier": 11
+  },
+  {
+    "name": "Broom",
+    "recipe": "Wood + Hay; Tool + Baba yaga",
+    "tier": 11
+  },
+  {
+    "name": "Bucket",
+    "recipe": "Container + Wood; Container + Yogurt; Container + Paint; Bottle + River; Bottle + Paint; Chicken wing + Container; Chicken wing + Box",
+    "tier": 11
+  },
+  {
+    "name": "Bus",
+    "recipe": "Car + Car; Car + Train; Car + City; Car + Big",
+    "tier": 11
+  },
+  {
+    "name": "Butter",
+    "recipe": "Milk + Pressure; Milk + Energy; Milk + Motion; Milk + Tool",
+    "tier": 11
+  },
+  {
+    "name": "Butterfly net",
+    "recipe": "Butterfly + Net; Bee + Net",
+    "tier": 11
+  },
+  {
+    "name": "Campfire",
+    "recipe": "Fire + Wood",
+    "tier": 11
+  },
+  {
+    "name": "Cart",
+    "recipe": "Wheel + Wood",
+    "tier": 11
+  },
+  {
+    "name": "Cashmere",
+    "recipe": "Mountain goat + Thread; Mountain goat + Fabric; Mountain goat + Tool; Mountain goat + Scissors; Mountain goat + Wool",
+    "tier": 11
+  },
+  {
+    "name": "Cereal",
+    "recipe": "Wheat + Milk; Wheat + Chocolate milk; Wheat + Coconut milk",
+    "tier": 11
+  },
+  {
+    "name": "Chainsaw",
+    "recipe": "Axe + Machine; Axe + Electricity; Axe + Motion; Lumberjack + Machine; Lumberjack + Electricity",
+    "tier": 11
+  },
+  {
+    "name": "Cheese",
+    "recipe": "Milk + Tool; Milk + Time; Milk + Cook; Milk + Bacteria",
+    "tier": 11
+  },
+  {
+    "name": "Christmas stocking",
+    "recipe": "Fireplace + Wool; Christmas tree + Wool; Reindeer + Wool; Santa + Wool",
+    "tier": 11
+  },
+  {
+    "name": "Closet",
+    "recipe": "Container + Broom; Container + Toolbox; Container + Umbrella; Container + Robot vacuum; Container + Vacuum cleaner",
+    "tier": 11
+  },
+  {
+    "name": "Coconut milk",
+    "recipe": "Coconut + Milk; Coconut + Tool; Coconut + Hammer; Coconut + Sword; Coconut + Blade; Coconut + Axe",
+    "tier": 11
+  },
+  {
+    "name": "Coffin",
+    "recipe": "Wood + Corpse; Container + Corpse; Container + Vampire",
+    "tier": 11
+  },
+  {
+    "name": "Cutting board",
+    "recipe": "Wood + Cook",
+    "tier": 11
+  },
+  {
+    "name": "Drum",
+    "recipe": "Wood + Leather; Wood + Fabric; Wood + Music",
+    "tier": 11
+  },
+  {
+    "name": "Electric car",
+    "recipe": "Electricity + Car; Electricity + Wagon; Car + Wind turbine; Wagon + Wind turbine; Solar cell + Car; Solar cell + Wagon",
+    "tier": 11
+  },
+  {
+    "name": "Fabric",
+    "recipe": "Thread + Machine; Thread + Tool; Thread + Wheel",
+    "tier": 11
+  },
+  {
+    "name": "Fireplace",
+    "recipe": "Campfire + House; Campfire + Brick; Campfire + Wall; Campfire + Container; Wood + Container",
+    "tier": 11
+  },
+  {
+    "name": "Firetruck",
+    "recipe": "Firefighter + Car; Firefighter + Wagon; Fire + Car; Fire + Wagon; Fire extinguisher + Car; Fire extinguisher + Wagon",
+    "tier": 11
+  },
+  {
+    "name": "Flour",
+    "recipe": "Wheat + Wheat; Wheat + Stone; Wheat + Windmill; Wheat + Wheel; Wheat + Rock",
+    "tier": 11
+  },
+  {
+    "name": "Flute",
+    "recipe": "Wood + Wind; Wood + Air",
+    "tier": 11
+  },
+  {
+    "name": "Fountain",
+    "recipe": "Statue + Water; Statue + Stream",
+    "tier": 11
+  },
+  {
+    "name": "French fries",
+    "recipe": "Oil + Vegetable; Oil + Potato; Fire + Potato",
+    "tier": 11
+  },
+  {
+    "name": "Fruit tree",
+    "recipe": "Fruit + Tree; Fruit + Plant; Fruit + Wood",
+    "tier": 11
+  },
+  {
+    "name": "Garage",
+    "recipe": "Car + House; Car + Container; Car + Wall; Car + Barn; Ambulance + House; Ambulance + Container; Ambulance + Wall; Ambulance + Barn; Motorcycle + House; Motorcycle + Container; Motorcycle + Wall; Motorcycle + Barn; Bus + House; Bus + Container; Bus + Wall; Bus + Barn; Sleigh + House; Sleigh + Container; Sleigh + Wall; Sleigh + Barn; Electric car + House; Electric car + Container; Electric car + Wall; Electric car + Barn; Snowmobile + House; Snowmobile + Container; Snowmobile + Wall; Snowmobile + Barn; Tractor + House; Tractor + Container; Tractor + Wall; Tractor + Barn; Rv + House; Rv + Container; Rv + Wall; Rv + Barn; Ice cream truck + House; Ice cream truck + Container; Ice cream truck + Wall; Ice cream truck + Barn",
+    "tier": 11
+  },
+  {
+    "name": "Grim reaper",
+    "recipe": "Human + Scythe; Corpse + Scythe; Zombie + Scythe; Death + Scythe; Boat + Scythe; River + Scythe; Scythe + Deity",
+    "tier": 11
+  },
+  {
+    "name": "Gust",
+    "recipe": "Wind + Small; Air + Small",
+    "tier": 11
+  },
+  {
+    "name": "Hay bale",
+    "recipe": "Hay + Hay; Hay + Barn; Hay + Tractor; Hay + Machine",
+    "tier": 11
+  },
+  {
+    "name": "Hill",
+    "recipe": "Big + Boulder; Earth + Boulder; Stone + Boulder; Boulder + Boulder; Mountain + Small",
+    "tier": 11
+  },
+  {
+    "name": "Honey",
+    "recipe": "Bee + Flower; Bee + Beehive; Bee + Time; Bee + Bee; Beehive + Beekeeper",
+    "tier": 11
+  },
+  {
+    "name": "Ice cream",
+    "recipe": "Milk + Cold; Milk + Ice; Milk + Snow",
+    "tier": 11
+  },
+  {
+    "name": "Ice sculpture",
+    "recipe": "Ice + Statue",
+    "tier": 11
+  },
+  {
+    "name": "Jam",
+    "recipe": "Juice + Sugar; Juice + Fruit; Juice + Machine; Fruit + Machine; Fruit + Heat",
+    "tier": 11
+  },
+  {
+    "name": "Knife",
+    "recipe": "Blade + Cook; Sword + Cook",
+    "tier": 11
+  },
+  {
+    "name": "Laptop",
+    "recipe": "Computer + Small",
+    "tier": 11
+  },
+  {
+    "name": "Little alchemy (element)",
+    "recipe": "Small + Alchemist",
+    "tier": 11
+  },
+  {
+    "name": "Log cabin",
+    "recipe": "Wood + House",
+    "tier": 11
+  },
+  {
+    "name": "Maple syrup",
+    "recipe": "Sap + Heat; Sap + Sugar",
+    "tier": 11
+  },
+  {
+    "name": "Mayonnaise",
+    "recipe": "Egg + Oil",
+    "tier": 11
+  },
+  {
+    "name": "Moon rover",
+    "recipe": "Moon + Car; Moon + Electric car",
+    "tier": 11
+  },
+  {
+    "name": "Motorcycle",
+    "recipe": "Bicycle + Machine; Bicycle + Metal; Bicycle + Steel; Bicycle + Steam engine; Bicycle + Combustion engine",
+    "tier": 11
+  },
+  {
+    "name": "Needle",
+    "recipe": "Thread + Metal; Thread + Steel; Thread + Tool",
+    "tier": 11
+  },
+  {
+    "name": "Paper",
+    "recipe": "Wood + Pressure; Wood + Water; Wood + Blender; Wood + Machine",
+    "tier": 11
+  },
+  {
+    "name": "Peanut butter",
+    "recipe": "Nuts + Butter; Nuts + Pressure",
+    "tier": 11
+  },
+  {
+    "name": "Pebble",
+    "recipe": "Small + Earth; Small + Stone; Small + Rock",
+    "tier": 11
+  },
+  {
+    "name": "Pencil",
+    "recipe": "Wood + Coal; Wood + Charcoal",
+    "tier": 11
+  },
+  {
+    "name": "Penicillin",
+    "recipe": "Mold + Doctor; Mold + Science; Mold + Idea; Mold + Hospital",
+    "tier": 11
+  },
+  {
+    "name": "Pinocchio",
+    "recipe": "Wood + Life; Wood + Story; Golem + Story",
+    "tier": 11
+  },
+  {
+    "name": "Pitchfork",
+    "recipe": "Hay + Tool; Hay + Metal; Hay + Steel; Tool + Demon",
+    "tier": 11
+  },
+  {
+    "name": "Popsicle",
+    "recipe": "Juice + Ice; Juice + Cold; Juice + Snow; Juice + Wood",
+    "tier": 11
+  },
+  {
+    "name": "Quicksand",
+    "recipe": "Sand + Swamp",
+    "tier": 11
+  },
+  {
+    "name": "Rainforest",
+    "recipe": "Rain + Forest",
+    "tier": 11
+  },
+  {
+    "name": "Rat",
+    "recipe": "Animal + Pirate ship; Animal + Sailboat; Mouse + Pirate ship; Mouse + Sailboat; Mouse + City; Mouse + Skyscraper; Mouse + Village; Mouse + Big",
+    "tier": 11
+  },
+  {
+    "name": "Reindeer",
+    "recipe": "Animal + Santa; Livestock + Santa; Animal + Christmas tree; Livestock + Christmas tree; Animal + Christmas stocking",
+    "tier": 11
+  },
+  {
+    "name": "Restaurant",
+    "recipe": "House + Cook",
+    "tier": 11
+  },
+  {
+    "name": "Roller coaster",
+    "recipe": "Park + Train; Park + Car; Park + Cart; Park + Wagon",
+    "tier": 11
+  },
+  {
+    "name": "Rv",
+    "recipe": "House + Car; House + Bus",
+    "tier": 11
+  },
+  {
+    "name": "Sack",
+    "recipe": "Container + Flour; Container + Salt; Container + Letter",
+    "tier": 11
+  },
+  {
+    "name": "Santa",
+    "recipe": "Christmas tree + Human; Christmas tree + Legend; Christmas tree + Story; Christmas stocking + Human; Christmas stocking + Legend; Christmas stocking + Story",
+    "tier": 11
+  },
+  {
+    "name": "Scarecrow",
+    "recipe": "Hay + Human; Hay + Statue; Hay + Golem; Hay + Sack; Farm + Statue; Barn + Statue; Pumpkin + Sack; Jack-o'-lantern + Sack",
+    "tier": 11
+  },
+  {
+    "name": "Scuba tank",
+    "recipe": "Container + Air; Container + Atmosphere; Container + Oxygen",
+    "tier": 11
+  },
+  {
+    "name": "Sewing machine",
+    "recipe": "Needle + Machine; Needle + Electricity; Needle + Robot; Thread + Machine; Thread + Electricity; Thread + Robot",
+    "tier": 11
+  },
+  {
+    "name": "Shovel",
+    "recipe": "Tool + Gardener",
+    "tier": 11
+  },
+  {
+    "name": "Silo",
+    "recipe": "Wheat + Container; Wheat + House; Wheat + Barn; Wheat + Wall; Wheat + Farm; Wheat + Safe; Wheat + Bank",
+    "tier": 11
+  },
+  {
+    "name": "Smoothie",
+    "recipe": "Fruit + Blender; Fruit + Ice; Fruit + Cold",
+    "tier": 11
+  },
+  {
+    "name": "Snowmobile",
+    "recipe": "Snow + Motorcycle; Snow + Car; Glacier + Motorcycle; Glacier + Car; Ice + Motorcycle; Ice + Car",
+    "tier": 11
+  },
+  {
+    "name": "Soap",
+    "recipe": "Oil + Ash; Oil + Wax; Oil + Clay; Wax + Ash; Wax + Clay",
+    "tier": 11
+  },
+  {
+    "name": "Spider",
+    "recipe": "Animal + Thread; Animal + Web; Animal + Net",
+    "tier": 11
+  },
+  {
+    "name": "Squirrel",
+    "recipe": "Mouse + Tree; Mouse + Plant; Mouse + Nuts; Animal + Nuts",
+    "tier": 11
+  },
+  {
+    "name": "Steamboat",
+    "recipe": "Steam engine + Boat; Steam engine + Sailboat; Steam engine + Pirate ship; Steam engine + Ocean; Steam engine + Sea",
+    "tier": 11
+  },
+  {
+    "name": "Steel wool",
+    "recipe": "Wool + Steel; Wool + Metal; Wool + Wire",
+    "tier": 11
+  },
+  {
+    "name": "Sugar",
+    "recipe": "Fruit + Fire; Fruit + Energy; Juice + Fire; Juice + Energy; Alcohol + Fire; Alcohol + Energy; Beer + Fire; Beer + Energy; Wine + Fire; Wine + Energy",
+    "tier": 11
+  },
+  {
+    "name": "Sweater",
+    "recipe": "Wool + Tool; Wool + Human",
+    "tier": 11
+  },
+  {
+    "name": "Tailor",
+    "recipe": "Human + Sewing machine; Human + Needle; Human + Thread",
+    "tier": 11
+  },
+  {
+    "name": "Tank",
+    "recipe": "Car + Armor; Car + Gun; Car + Metal; Car + Steel",
+    "tier": 11
+  },
+  {
+    "name": "Tea",
+    "recipe": "Leaf + Water; Leaf + Human; Leaf + Heat",
+    "tier": 11
+  },
+  {
+    "name": "Thermometer",
+    "recipe": "Quicksilver + Glass; Quicksilver + Tool; Quicksilver + Engineer",
+    "tier": 11
+  },
+  {
+    "name": "Titanic",
+    "recipe": "Boat + Iceberg; Steamboat + Iceberg; Iceberg + Legend; Steamboat + Legend",
+    "tier": 11
+  },
+  {
+    "name": "Tractor",
+    "recipe": "Car + Farmer; Car + Field; Car + Cow; Wagon + Farmer; Wagon + Field; Wagon + Cow",
+    "tier": 11
+  },
+  {
+    "name": "Train",
+    "recipe": "Steam engine + Metal; Steam engine + Steel; Steam engine + Wheel; Steam engine + Wagon",
+    "tier": 11
+  },
+  {
+    "name": "Vault",
+    "recipe": "Safe + Big",
+    "tier": 11
+  },
+  {
+    "name": "Water pipe",
+    "recipe": "Water + Pipe",
+    "tier": 11
+  },
+  {
+    "name": "Witch",
+    "recipe": "Broom + Wizard; Broom + Human; Broom + Legend; Broom + Story; Broom + Magic; Broom + Cauldron; Cauldron + Story; Cauldron + Legend",
+    "tier": 11
+  },
+  {
+    "name": "Yogurt",
+    "recipe": "Bacteria + Milk; Bacteria + Ice cream",
+    "tier": 11
+  },
+  {
+    "name": "Apron",
+    "recipe": "Fabric + Cook; Fabric + Baker",
+    "tier": 12
+  },
+  {
+    "name": "Armor",
+    "recipe": "Metal + Fabric; Steel + Fabric",
+    "tier": 12
+  },
+  {
+    "name": "Bandage",
+    "recipe": "Fabric + Blood; Fabric + Sword; Fabric + Blade",
+    "tier": 12
+  },
+  {
+    "name": "Batter",
+    "recipe": "Milk + Flour; Coconut milk + Flour",
+    "tier": 12
+  },
+  {
+    "name": "Bbq",
+    "recipe": "Campfire + Metal; Campfire + Steel; Campfire + Garden; Campfire + House; Campfire + Meat",
+    "tier": 12
+  },
+  {
+    "name": "Beer",
+    "recipe": "Alcohol + Wheat",
+    "tier": 12
+  },
+  {
+    "name": "Box",
+    "recipe": "Container + Pizza; Container + Pencil; Container + Cereal; Container + Cookie; Container + Donut; Container + Cake; Container + Crayon",
+    "tier": 12
+  },
+  {
+    "name": "Candy cane",
+    "recipe": "Sugar + Christmas tree; Sugar + Christmas stocking; Sugar + Santa; Sugar + Reindeer",
+    "tier": 12
+  },
+  {
+    "name": "Canvas",
+    "recipe": "Fabric + Paint",
+    "tier": 12
+  },
+  {
+    "name": "Caramel",
+    "recipe": "Sugar + Heat",
+    "tier": 12
+  },
+  {
+    "name": "Chocolate",
+    "recipe": "Sugar + Milk; Sugar + Oil; Sugar + Coconut milk; Sugar + Seed",
+    "tier": 12
+  },
+  {
+    "name": "Cigarette",
+    "recipe": "Tobacco + Paper",
+    "tier": 12
+  },
+  {
+    "name": "Confetti",
+    "recipe": "Paper + Scissors; Paper + Blade",
+    "tier": 12
+  },
+  {
+    "name": "Cookbook",
+    "recipe": "Recipe + Recipe; Book + Cook",
+    "tier": 12
+  },
+  {
+    "name": "Cotton candy",
+    "recipe": "Sugar + Air; Sugar + Thread; Sugar + Cloud",
+    "tier": 12
+  },
+  {
+    "name": "Crayon",
+    "recipe": "Rainbow + Pencil; Rainbow + Wax; Double rainbow! + Pencil; Double rainbow! + Wax; Pencil + Paint; Wax + Paint",
+    "tier": 12
+  },
+  {
+    "name": "Cup",
+    "recipe": "Container + Smoothie; Container + Tea; Container + Milk shake; Bottle + Smoothie; Bottle + Tea; Bottle + Milk shake",
+    "tier": 12
+  },
+  {
+    "name": "Diver",
+    "recipe": "Scuba tank + Human; Scuba tank + Swimmer; Scuba tank + Sea; Scuba tank + Ocean; Scuba tank + Lake",
+    "tier": 12
+  },
+  {
+    "name": "Dough",
+    "recipe": "Flour + Water; Flour + Puddle; Flour + Rain",
+    "tier": 12
+  },
+  {
+    "name": "Drunk",
+    "recipe": "Human + Alcohol; Human + Beer; Human + Wine",
+    "tier": 12
+  },
+  {
+    "name": "Excavator",
+    "recipe": "Shovel + Big; Shovel + Car",
+    "tier": 12
+  },
+  {
+    "name": "Flying squirrel",
+    "recipe": "Squirrel + Bird; Squirrel + Hummingbird; Squirrel + Seagull; Squirrel + Pigeon; Squirrel + Air; Squirrel + Airplane; Squirrel + Seaplane; Squirrel + Helicopter",
+    "tier": 12
+  },
+  {
+    "name": "Fork",
+    "recipe": "Pitchfork + Small",
+    "tier": 12
+  },
+  {
+    "name": "Frozen yogurt",
+    "recipe": "Yogurt + Cold; Yogurt + Ice",
+    "tier": 12
+  },
+  {
+    "name": "Gift",
+    "recipe": "Christmas tree + Santa; Christmas tree + Wrapping paper; Santa + Christmas stocking; Santa + Chimney; Santa + Fireplace; Santa + Cookie; Santa + Milk; Santa + Wrapping paper; Christmas stocking + Wrapping paper; Fireplace + Wrapping paper",
+    "tier": 12
+  },
+  {
+    "name": "Hamburger",
+    "recipe": "Meat + Bread; Meat + Cheese",
+    "tier": 12
+  },
+  {
+    "name": "Hamster",
+    "recipe": "Mouse + Wheel; Mouse + Domestication; Rat + Wheel; Rat + Domestication",
+    "tier": 12
+  },
+  {
+    "name": "Hedgehog",
+    "recipe": "Animal + Needle; Mouse + Needle; Rat + Needle",
+    "tier": 12
+  },
+  {
+    "name": "Ice cream truck",
+    "recipe": "Ice cream + Car; Ice cream + Bus; Ice cream + Wagon",
+    "tier": 12
+  },
+  {
+    "name": "Iced tea",
+    "recipe": "Tea + Ice; Tea + Cold",
+    "tier": 12
+  },
+  {
+    "name": "Jar",
+    "recipe": "Jam + Container; Jam + Bottle; Jam + Glass; Jam + Bucket",
+    "tier": 12
+  },
+  {
+    "name": "Kite",
+    "recipe": "Paper + Wind; Paper + Sky; Paper + Air",
+    "tier": 12
+  },
+  {
+    "name": "Letter",
+    "recipe": "Paper + Pencil",
+    "tier": 12
+  },
+  {
+    "name": "Library",
+    "recipe": "Book + Container; Book + House",
+    "tier": 12
+  },
+  {
+    "name": "Map",
+    "recipe": "Paper + Land; Paper + Hill; Paper + Mountain; Paper + Mountain range; Paper + Continent; Paper + Ocean; Paper + Sea; Paper + Lake; Paper + River; Paper + City; Paper + Village",
+    "tier": 12
+  },
+  {
+    "name": "Marshmallows",
+    "recipe": "Sugar + Campfire",
+    "tier": 12
+  },
+  {
+    "name": "Milk shake",
+    "recipe": "Ice cream + Milk; Ice cream + Yogurt; Ice cream + Water",
+    "tier": 12
+  },
+  {
+    "name": "Money",
+    "recipe": "Paper + Gold; Paper + Diamond; Paper + Bank",
+    "tier": 12
+  },
+  {
+    "name": "Mouse",
+    "recipe": "Animal + Cheese; Cheese + Barn; Cheese + House; Cheese + Farm; Cheese + Wall",
+    "tier": 12
+  },
+  {
+    "name": "Mousetrap",
+    "recipe": "Cheese + Wood; Cheese + Metal; Cheese + Steel; Mouse + Blade",
+    "tier": 12
+  },
+  {
+    "name": "Musician",
+    "recipe": "Human + Flute; Human + Music; Human + Sheet music; Human + Drum; Human + Pan flute",
+    "tier": 12
+  },
+  {
+    "name": "Newspaper",
+    "recipe": "Paper + Paper; Paper + Story; Letter + Letter",
+    "tier": 12
+  },
+  {
+    "name": "Orchard",
+    "recipe": "Fruit tree + Fruit tree; Fruit tree + Field; Fruit tree + Tree; Fruit tree + Farmer; Fruit tree + Farm; Fruit tree + Forest; Fruit tree + Container",
+    "tier": 12
+  },
+  {
+    "name": "Origami",
+    "recipe": "Paper + Bird; Paper + Animal; Paper + Eagle; Paper + Seagull; Paper + Owl; Paper + Pigeon; Paper + Cow; Paper + Horse; Paper + Dog; Paper + Cat; Paper + Lion; Paper + Hummingbird; Paper + Chicken; Paper + Penguin; Paper + Duck; Paper + Vulture",
+    "tier": 12
+  },
+  {
+    "name": "Pan flute",
+    "recipe": "Flute + Flute",
+    "tier": 12
+  },
+  {
+    "name": "Paper airplane",
+    "recipe": "Airplane + Paper",
+    "tier": 12
+  },
+  {
+    "name": "Pasta",
+    "recipe": "Flour + Egg",
+    "tier": 12
+  },
+  {
+    "name": "Pencil sharpener",
+    "recipe": "Pencil + Blade; Pencil + Blender; Pencil + Sword",
+    "tier": 12
+  },
+  {
+    "name": "Pizza",
+    "recipe": "Cheese + Dough; Cheese + Bread; Cheese + Wheel",
+    "tier": 12
+  },
+  {
+    "name": "Printer",
+    "recipe": "Computer + Paper; Computer + Newspaper",
+    "tier": 12
+  },
+  {
+    "name": "Recipe",
+    "recipe": "Paper + Flour; Paper + Meat; Paper + Baker; Paper + Bakery; Paper + Vegetable; Paper + Fruit; Paper + Cook; Newspaper + Flour; Newspaper + Meat; Newspaper + Baker; Newspaper + Bakery; Newspaper + Vegetable; Newspaper + Fruit",
+    "tier": 12
+  },
+  {
+    "name": "Robot vacuum",
+    "recipe": "Robot + Vacuum cleaner; Robot + Broom; Computer + Vacuum cleaner; Computer + Broom",
+    "tier": 12
+  },
+  {
+    "name": "Rock",
+    "recipe": "Pebble + Pebble; Pebble + Big; Boulder + Small",
+    "tier": 12
+  },
+  {
+    "name": "Ruler",
+    "recipe": "Wood + Pencil",
+    "tier": 12
+  },
+  {
+    "name": "Sailboat",
+    "recipe": "Boat + Wind; Boat + Fabric; Steamboat + Wind; Steamboat + Fabric",
+    "tier": 12
+  },
+  {
+    "name": "Sandpaper",
+    "recipe": "Sand + Paper; Sand + Fabric",
+    "tier": 12
+  },
+  {
+    "name": "Sleigh",
+    "recipe": "Cart + Snow; Cart + Ice; Cart + Arctic; Cart + Antarctica; Wagon + Snow; Wagon + Ice; Wagon + Arctic; Wagon + Antarctica",
+    "tier": 12
+  },
+  {
+    "name": "Smoke signal",
+    "recipe": "Fabric + Campfire; Fabric + Smoke; Smoke + Letter",
+    "tier": 12
+  },
+  {
+    "name": "Spoon",
+    "recipe": "Shovel + Small",
+    "tier": 12
+  },
+  {
+    "name": "Sprinkles",
+    "recipe": "Sugar + Confetti; Sugar + Paint; Sugar + Rainbow; Sugar + Double rainbow!",
+    "tier": 12
+  },
+  {
+    "name": "Syringe",
+    "recipe": "Doctor + Needle; Tool + Needle",
+    "tier": 12
+  },
+  {
+    "name": "Tablet",
+    "recipe": "Laptop + Small",
+    "tier": 12
+  },
+  {
+    "name": "Tent",
+    "recipe": "Fabric + Wood; Fabric + House; Fabric + Village; Fabric + Wall",
+    "tier": 12
+  },
+  {
+    "name": "Trainyard",
+    "recipe": "Train + Container; Train + House; Train + Wall; Train + Garage",
+    "tier": 12
+  },
+  {
+    "name": "Vacuum cleaner",
+    "recipe": "Broom + Electricity; Broom + Machine",
+    "tier": 12
+  },
+  {
+    "name": "Vine",
+    "recipe": "Rainforest + Rope; Rainforest + Thread; Rainforest + Wire",
+    "tier": 12
+  },
+  {
+    "name": "Wagon",
+    "recipe": "Cart + Horse; Cart + Fabric; Cart + House; Cart + Wall; Cart + Cow",
+    "tier": 12
+  },
+  {
+    "name": "Wax",
+    "recipe": "Beehive + Bee; Beehive + Wall; Beehive + Blade; Beehive + Sword; Beehive + Tool; Beehive + Beekeeper",
+    "tier": 12
+  },
+  {
+    "name": "Web",
+    "recipe": "Spider + Thread; Spider + Cotton; Spider + Fabric; Spider + Net",
+    "tier": 12
+  },
+  {
+    "name": "Wine",
+    "recipe": "Alcohol + Fruit; Alcohol + Juice; Tool + Dionysus",
+    "tier": 12
+  },
+  {
+    "name": "Wrapping paper",
+    "recipe": "Paper + Gift; Paper + Christmas tree; Paper + Christmas stocking; Paper + Santa",
+    "tier": 12
+  },
+  {
+    "name": "Writer",
+    "recipe": "Human + Book; Human + Pencil",
+    "tier": 12
+  },
+  {
+    "name": "Armadillo",
+    "recipe": "Armor + Animal; Armor + Dog; Armor + Cat",
+    "tier": 13
+  },
+  {
+    "name": "Baker",
+    "recipe": "Human + Bakery; Human + Bread; Human + Banana bread; Human + Pizza; Human + Toast; Human + Batter; Human + Pie; Human + Donut; Human + Cookie; Human + Cookie dough; Human + Dough",
+    "tier": 13
+  },
+  {
+    "name": "Banana bread",
+    "recipe": "Bread + Banana; Dough + Banana",
+    "tier": 13
+  },
+  {
+    "name": "Barrel",
+    "recipe": "Wine + Container; Wine + Wood",
+    "tier": 13
+  },
+  {
+    "name": "Bat",
+    "recipe": "Mouse + Sky; Mouse + Air; Mouse + Bird; Mouse + Hummingbird; Mouse + Atmosphere",
+    "tier": 13
+  },
+  {
+    "name": "Bread",
+    "recipe": "Dough + Fire; Dough + Energy",
+    "tier": 13
+  },
+  {
+    "name": "Bulletproof vest",
+    "recipe": "Bullet + Armor; Gun + Armor",
+    "tier": 13
+  },
+  {
+    "name": "Candle",
+    "recipe": "Wax + Thread; Wax + Fire; Wax + Light; Wax + Flashlight; Wax + Lamp",
+    "tier": 13
+  },
+  {
+    "name": "Cheeseburger",
+    "recipe": "Cheese + Hamburger; Cheese + Sandwich",
+    "tier": 13
+  },
+  {
+    "name": "Chocolate milk",
+    "recipe": "Chocolate + Milk; Chocolate + Coconut milk",
+    "tier": 13
+  },
+  {
+    "name": "Circus",
+    "recipe": "Tent + Big; Tent + Animal",
+    "tier": 13
+  },
+  {
+    "name": "Cookie cutter",
+    "recipe": "Blade + Dough; Blade + Cookie dough",
+    "tier": 13
+  },
+  {
+    "name": "Cookie dough",
+    "recipe": "Dough + Cookie; Dough + Sugar; Dough + Chocolate",
+    "tier": 13
+  },
+  {
+    "name": "Donut",
+    "recipe": "Dough + Oil; Dough + Wheel; Cookie dough + Oil; Cookie dough + Wheel",
+    "tier": 13
+  },
+  {
+    "name": "Email",
+    "recipe": "Letter + Computer; Letter + Computer mouse; Letter + Internet; Letter + Electricity",
+    "tier": 13
+  },
+  {
+    "name": "Gingerbread house",
+    "recipe": "House + Gingerbread man; House + Dough; House + Cookie dough; House + Cookie; House + Donut; House + Cake",
+    "tier": 13
+  },
+  {
+    "name": "Gingerbread man",
+    "recipe": "Dough + Life; Dough + Magic; Dough + Story; Cookie + Life; Cookie + Magic; Cookie + Story; Cookie dough + Life; Cookie dough + Magic; Cookie dough + Story",
+    "tier": 13
+  },
+  {
+    "name": "Hot chocolate",
+    "recipe": "Chocolate milk + Heat; Chocolate + Heat",
+    "tier": 13
+  },
+  {
+    "name": "Librarian",
+    "recipe": "Human + Library",
+    "tier": 13
+  },
+  {
+    "name": "Mac and cheese",
+    "recipe": "Cheese + Pasta",
+    "tier": 13
+  },
+  {
+    "name": "Mail truck",
+    "recipe": "Car + Letter; Car + Mailman; Car + Post office",
+    "tier": 13
+  },
+  {
+    "name": "Mailbox",
+    "recipe": "Letter + Box; Letter + Metal; Letter + Steel; Letter + Wood; Mailman + Box; Mailman + Metal; Mailman + Steel; Mailman + Wood",
+    "tier": 13
+  },
+  {
+    "name": "Mailman",
+    "recipe": "Human + Letter; Human + Newspaper; Letter + Mailbox",
+    "tier": 13
+  },
+  {
+    "name": "Music",
+    "recipe": "Musician + Flute; Musician + Sheet music; Musician + Drum; Musician + Pan flute",
+    "tier": 13
+  },
+  {
+    "name": "Painting",
+    "recipe": "Canvas + Paint; Canvas + Painter",
+    "tier": 13
+  },
+  {
+    "name": "Paper cup",
+    "recipe": "Cup + Paper",
+    "tier": 13
+  },
+  {
+    "name": "Paraglider",
+    "recipe": "Kite + Big",
+    "tier": 13
+  },
+  {
+    "name": "Pie",
+    "recipe": "Dough + Fruit; Cookie dough + Fruit; Dough + Meat; Fruit + Baker; Fruit + Bakery",
+    "tier": 13
+  },
+  {
+    "name": "Post office",
+    "recipe": "Mailman + House; Mailman + Wall; Mailman + Container; Mailman + Letter; Letter + Letter; Letter + House; Letter + Wall",
+    "tier": 13
+  },
+  {
+    "name": "Smartphone",
+    "recipe": "Small + Tablet",
+    "tier": 13
+  },
+  {
+    "name": "Spaghetti",
+    "recipe": "Pasta + Thread; Pasta + Wire; Pasta + Rope",
+    "tier": 13
+  },
+  {
+    "name": "String phone",
+    "recipe": "Paper cup + Wire; Paper cup + Thread; Cup + Wire; Cup + Thread",
+    "tier": 13
+  },
+  {
+    "name": "Treasure map",
+    "recipe": "Map + Pirate; Map + Pirate ship; Map + Treasure; Map + Island",
+    "tier": 13
+  },
+  {
+    "name": "Vinegar",
+    "recipe": "Wine + Time; Wine + Air; Wine + Oxygen",
+    "tier": 13
+  },
+  {
+    "name": "Bakery",
+    "recipe": "House + Bread; House + Baker; House + Donut; House + Cake; City + Bread; City + Baker; City + Donut; City + Cake; Village + Bread; Village + Baker; Village + Donut; Village + Cake; Baker + Container",
+    "tier": 14
+  },
+  {
+    "name": "Cake",
+    "recipe": "Dough + Candle; Donut + Candle; Bread + Sugar",
+    "tier": 14
+  },
+  {
+    "name": "Cookie",
+    "recipe": "Cookie dough + Heat; Cookie dough + Fire; Cookie dough + Baker; Cookie dough + Cookie cutter; Dough + Cookie cutter",
+    "tier": 14
+  },
+  {
+    "name": "Fortune cookie",
+    "recipe": "Paper + Cookie; Paper + Cookie dough; Paper + Gingerbread man",
+    "tier": 14
+  },
+  {
+    "name": "Sandwich",
+    "recipe": "Bread + Meat; Bread + Bacon; Bread + Ham; Bread + Cheese; Bread + Vegetable",
+    "tier": 14
+  },
+  {
+    "name": "Sheet music",
+    "recipe": "Music + Paper; Music + Book",
+    "tier": 14
+  },
+  {
+    "name": "Toast",
+    "recipe": "Sandwich + Fire; Bread + Fire",
+    "tier": 14
+  },
+  {
+    "name": "Treasure",
+    "recipe": "Treasure map + Pirate; Treasure map + Pirate ship; Treasure map + Island; Treasure map + Sailor",
+    "tier": 14
+  },
+  {
+    "name": "Grilled cheese",
+    "recipe": "Cheese + Toast",
+    "tier": 15
+  },
+  {
+    "name": "Picnic",
+    "recipe": "Sandwich + Grass; Sandwich + Beach; Sandwich + Lawn; Sandwich + Garden; Sandwich + Fabric",
+    "tier": 15
+  }
+]

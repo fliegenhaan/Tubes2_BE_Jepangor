@@ -4,6 +4,7 @@ import (
     "encoding/json"
     "fmt"
     "os"
+    "strings"
     "sync"
     "time"
 
@@ -12,22 +13,57 @@ import (
 )
 
 type RecipeService struct {
-    Graph model.Graph
+    Graph   model.Graph
+    TierMap model.TierMap
 }
 
 func NewRecipeService(filePath string) (*RecipeService, error) {
     data, err := os.ReadFile(filePath)
     if err != nil {
-        return nil, fmt.Errorf("failed to read recipes data: %v", err)
+        return nil, fmt.Errorf("gagal membaca file data: %v", err)
     }
 
-    var graph model.Graph
-    if err := json.Unmarshal(data, &graph); err != nil {
-        return nil, fmt.Errorf("failed to unmarshal recipes data: %v", err)
+    var elementsData []model.ElementData
+    if err := json.Unmarshal(data, &elementsData); err != nil {
+        return nil, fmt.Errorf("gagal unmarshal data: %v", err)
+    }
+
+    graph := make(model.Graph)
+    tierMap := make(model.TierMap)
+
+    for _, element := range elementsData {
+        tierMap[element.Name] = element.Tier
+
+        if element.Recipe == "Available from the start" {
+            graph[element.Name] = [][]string{}
+            continue
+        }
+
+        var combinations [][]string
+        recipeVariants := strings.Split(element.Recipe, ";")
+        
+        for _, variant := range recipeVariants {
+            variant = strings.TrimSpace(variant)
+            if variant == "" {
+                continue
+            }
+            
+            ingredients := strings.Split(variant, "+")
+            if len(ingredients) == 2 {
+                combination := []string{
+                    strings.TrimSpace(ingredients[0]),
+                    strings.TrimSpace(ingredients[1]),
+                }
+                combinations = append(combinations, combination)
+            }
+        }
+        
+        graph[element.Name] = combinations
     }
 
     return &RecipeService{
-        Graph: graph,
+        Graph:   graph,
+        TierMap: tierMap,
     }, nil
 }
 
@@ -38,13 +74,13 @@ func (s *RecipeService) FindRecipes(params model.SearchParams) model.SearchResul
 
     switch params.Algorithm {
     case "bfs":
-        return algorithm.BFS(s.Graph, params.TargetElement, params.FindShortest, params.MaxRecipes)
+        return algorithm.BFS(s.Graph, s.TierMap, params.TargetElement, params.FindShortest, params.MaxRecipes)
     case "dfs":
-        return algorithm.DFS(s.Graph, params.TargetElement, params.FindShortest, params.MaxRecipes)
+        return algorithm.DFS(s.Graph, s.TierMap, params.TargetElement, params.FindShortest, params.MaxRecipes)
     case "bidirectional":
-        return algorithm.Bidirectional(s.Graph, params.TargetElement, params.FindShortest, params.MaxRecipes)
+        return algorithm.Bidirectional(s.Graph, s.TierMap, params.TargetElement, params.FindShortest, params.MaxRecipes)
     default:
-        return algorithm.BFS(s.Graph, params.TargetElement, params.FindShortest, params.MaxRecipes)
+        return algorithm.BFS(s.Graph, s.TierMap, params.TargetElement, params.FindShortest, params.MaxRecipes)
     }
 }
 
@@ -83,13 +119,13 @@ func (s *RecipeService) FindMultipleRecipes(params model.SearchParams) model.Sea
             var result model.SearchResult
             switch params.Algorithm {
             case "bfs":
-                result = algorithm.BFS(s.Graph, params.TargetElement, false, maxRecipes)
+                result = algorithm.BFS(s.Graph, s.TierMap, params.TargetElement, false, maxRecipes)
             case "dfs":
-                result = algorithm.DFS(s.Graph, params.TargetElement, false, maxRecipes)
+                result = algorithm.DFS(s.Graph, s.TierMap, params.TargetElement, false, maxRecipes)
             case "bidirectional":
-                result = algorithm.Bidirectional(s.Graph, params.TargetElement, false, maxRecipes)
+                result = algorithm.Bidirectional(s.Graph, s.TierMap, params.TargetElement, false, maxRecipes)
             default:
-                result = algorithm.BFS(s.Graph, params.TargetElement, false, maxRecipes)
+                result = algorithm.BFS(s.Graph, s.TierMap, params.TargetElement, false, maxRecipes)
             }
 
             mutex.Lock()
