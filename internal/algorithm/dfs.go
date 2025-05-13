@@ -1,150 +1,120 @@
 package algorithm
 
 import (
-    "time"
-
     "github.com/fliegenhaan/Tubes2_BE_Jepangor/internal/model"
 )
 
-func DFS(graph model.Graph, tierMap model.TierMap, targetElement string, findShortest bool, maxRecipes int) model.SearchResult {
-    startTime := time.Now()
+func DFS(graph model.Graph, tierMap model.TierMap, targetElement string, findShortest bool, maxRecipes int) ([]model.Recipe, int) {
     
-    if _, exists := graph[targetElement]; !exists {
-        return model.SearchResult{
-            TargetElement: targetElement,
-            Recipes:       []model.Recipe{},
-            VisitedNodes:  0,
-            TimeElapsed:   time.Since(startTime).Seconds(),
-        }
-    }
-
-    baseElements := []string{"Air", "Earth", "Fire", "Water"}
-    
-    targetTier, exists := tierMap[targetElement]
-    if !exists {
-        targetTier = 999
+    stack := []struct{
+        element string
+        path [][]string
+        visited map[string]bool
+        depth int
+    }{
+        {
+            element: targetElement,
+            path: [][]string{},
+            visited: make(map[string]bool),
+            depth: 0,
+        },
     }
     
-    for _, base := range baseElements {
-        if base == targetElement {
-            recipe := model.Recipe{
-                Ingredients: []string{targetElement},
-            }
-            return model.SearchResult{
-                TargetElement: targetElement,
-                Recipes:       []model.Recipe{recipe},
-                VisitedNodes:  1,
-                TimeElapsed:   time.Since(startTime).Seconds(),
-            }
-        }
-    }
-    
-    var stack []model.Node
     visited := make(map[string]bool)
-    var recipes []model.Recipe
+    recipes := []model.Recipe{}
     visitedCount := 0
-
-    for _, element := range baseElements {
-        node := model.Node{
-            Element:   element,
-            Path:      []model.Recipe{},
-            Visited:   make(map[string]bool),
-            Depth:     0,
-        }
-        node.Visited[element] = true
-        stack = append(stack, node)
+    recipeIdCounter := 0
+    
+    foundRecipes := make(map[string]bool)
+    
+    baseElements := map[string]bool{
+        "Air": true,
+        "Earth": true,
+        "Fire": true,
+        "Water": true,
+        "Time": true,
     }
-
+    
     for len(stack) > 0 && len(recipes) < maxRecipes {
-        lastIndex := len(stack) - 1
-        currNode := stack[lastIndex]
-        stack = stack[:lastIndex]
+        lastIdx := len(stack) - 1
+        current := stack[lastIdx]
+        stack = stack[:lastIdx]
         
+        if visited[current.element] {
+            continue
+        }
+        
+        visited[current.element] = true
         visitedCount++
-        
-        if currNode.Depth > maxDepth {
-            continue
-        }
-        
-        if currNode.Element == targetElement {
-            recipes = append(recipes, currNode.Path...)
-            
-            if findShortest {
-                break
-            }
-            continue
-        }
 
-        if !visited[currNode.Element] {
-            visited[currNode.Element] = true
+        if baseElements[current.element] {
+            recipe := createRecipe(recipeIdCounter, targetElement, current.path, true)
+            recipeKey := getRecipeKey(recipe)
             
-            type candidate struct {
-                Element, OtherIngredient, NextElement string
+            if !foundRecipes[recipeKey] {
+                recipes = append(recipes, recipe)
+                foundRecipes[recipeKey] = true
+                recipeIdCounter++
+                
+                if findShortest && len(recipes) > 0 {
+                    return recipes, visitedCount
+                }
             }
             
-            var candidates []candidate
-            
-            for nextElement, combinations := range graph {
-                nextTier, exists := tierMap[nextElement]
-                if !exists || (nextTier >= targetTier && nextElement != targetElement) {
-                    continue
-                }
+            continue
+        }
+        
+        combinations := graph[current.element]
+        for i := len(combinations) - 1; i >= 0; i-- {
+            combination := combinations[i]
+            if isValidCombination(tierMap, current.element, combination) {
+                newPath := make([][]string, len(current.path)+1)
+                copy(newPath, current.path)
+                newPath[len(current.path)] = combination
                 
-                for _, combination := range combinations {
-                    if len(combination) == 2 {
-                        ingredient1, ingredient2 := combination[0], combination[1]
-                        
-                        if ingredient1 == currNode.Element || ingredient2 == currNode.Element {
-                            otherIngredient := ingredient2
-                            if ingredient1 != currNode.Element {
-                                otherIngredient = ingredient1
+                reachedBase := true
+                for _, ingredient := range combination {
+                    if !baseElements[ingredient] {
+                        reachedBase = false
+                        if !visited[ingredient] && tierMap[ingredient] < tierMap[current.element] {
+                            newVisited := make(map[string]bool)
+                            for k, v := range current.visited {
+                                newVisited[k] = v
                             }
+                            newVisited[current.element] = true
                             
-                            candidates = append(candidates, candidate{
-                                Element:         currNode.Element,
-                                OtherIngredient: otherIngredient,
-                                NextElement:     nextElement,
+                            stack = append(stack, struct{
+                                element string
+                                path [][]string
+                                visited map[string]bool
+                                depth int
+                            }{
+                                element: ingredient,
+                                path: newPath,
+                                visited: newVisited,
+                                depth: current.depth + 1,
                             })
                         }
                     }
                 }
-            }
-            
-            for i := len(candidates) - 1; i >= 0; i-- {
-                cand := candidates[i]
                 
-                if currNode.Visited[cand.OtherIngredient] {
-                    continue
+                if reachedBase {
+                    recipe := createRecipe(recipeIdCounter, targetElement, newPath, true)
+                    recipeKey := getRecipeKey(recipe)
+                    
+                    if !foundRecipes[recipeKey] {
+                        recipes = append(recipes, recipe)
+                        foundRecipes[recipeKey] = true
+                        recipeIdCounter++
+                        
+                        if findShortest && len(recipes) > 0 {
+                            return recipes, visitedCount
+                        }
+                    }
                 }
-                
-                newNode := model.Node{
-                    Element:   cand.NextElement,
-                    Path:      make([]model.Recipe, len(currNode.Path)+1),
-                    Visited:   make(map[string]bool),
-                    Depth:     currNode.Depth + 1,
-                }
-                
-                copy(newNode.Path, currNode.Path)
-                for k, v := range currNode.Visited {
-                    newNode.Visited[k] = v
-                }
-                
-                newNode.Visited[cand.NextElement] = true
-                newNode.Visited[cand.OtherIngredient] = true
-                
-                newNode.Path[len(currNode.Path)] = model.Recipe{
-                    Ingredients: []string{cand.Element, cand.OtherIngredient},
-                }
-                
-                stack = append(stack, newNode)
             }
         }
     }
-
-    return model.SearchResult{
-        TargetElement: targetElement,
-        Recipes:       recipes,
-        VisitedNodes:  visitedCount,
-        TimeElapsed:   time.Since(startTime).Seconds(),
-    }
+    
+    return recipes, visitedCount
 }

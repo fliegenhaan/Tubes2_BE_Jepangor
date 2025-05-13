@@ -1,136 +1,185 @@
 package algorithm
 
 import (
-    "container/list"
-    "time"
+    "strconv"
 
     "github.com/fliegenhaan/Tubes2_BE_Jepangor/internal/model"
 )
 
-const (
-    maxDepth = 15
-)
-
-func BFS(graph model.Graph, tierMap model.TierMap, targetElement string, findShortest bool, maxRecipes int) model.SearchResult {
-    startTime := time.Now()
+func BFS(graph model.Graph, tierMap model.TierMap, targetElement string, findShortest bool, maxRecipes int) ([]model.Recipe, int) {
     
-    if _, exists := graph[targetElement]; !exists {
-        return model.SearchResult{
-            TargetElement: targetElement,
-            Recipes:       []model.Recipe{},
-            VisitedNodes:  0,
-            TimeElapsed:   time.Since(startTime).Seconds(),
-        }
-    }
-
-    baseElements := []string{"Air", "Earth", "Fire", "Water"}
-    
-    targetTier, exists := tierMap[targetElement]
-    if !exists {
-        targetTier = 999
+    queue := []struct{
+        element string
+        path [][]string
+        visited map[string]bool
+        depth int
+    }{
+        {
+            element: targetElement,
+            path: [][]string{},
+            visited: make(map[string]bool),
+            depth: 0,
+        },
     }
     
-    for _, base := range baseElements {
-        if base == targetElement {
-            recipe := model.Recipe{
-                Ingredients: []string{targetElement},
-            }
-            return model.SearchResult{
-                TargetElement: targetElement,
-                Recipes:       []model.Recipe{recipe},
-                VisitedNodes:  1,
-                TimeElapsed:   time.Since(startTime).Seconds(),
-            }
-        }
-    }
-
-    queue := list.New()
     visited := make(map[string]bool)
-    var recipes []model.Recipe
+    recipes := []model.Recipe{}
     visitedCount := 0
-
-    for _, element := range baseElements {
-        node := model.Node{
-            Element:   element,
-            Path:      []model.Recipe{},
-            Visited:   make(map[string]bool),
-            Depth:     0,
-        }
-        node.Visited[element] = true
-        queue.PushBack(node)
+    recipeIdCounter := 0
+    
+    foundRecipes := make(map[string]bool)
+    
+    baseElements := map[string]bool{
+        "Air": true,
+        "Earth": true,
+        "Fire": true,
+        "Water": true,
+        "Time": true,
     }
-
-    for queue.Len() > 0 && len(recipes) < maxRecipes {
-        currNode := queue.Remove(queue.Front()).(model.Node)
+    
+    for len(queue) > 0 && len(recipes) < maxRecipes {
+        current := queue[0]
+        queue = queue[1:]
+        
+        if visited[current.element] {
+            continue
+        }
+        
+        visited[current.element] = true
         visitedCount++
         
-        if currNode.Depth > maxDepth {
+        if baseElements[current.element] {
+            recipe := createRecipe(recipeIdCounter, targetElement, current.path, true)
+            
+            recipeKey := getRecipeKey(recipe)
+            
+            if !foundRecipes[recipeKey] {
+                recipes = append(recipes, recipe)
+                foundRecipes[recipeKey] = true
+                recipeIdCounter++
+                
+                if findShortest && len(recipes) > 0 {
+                    return recipes, visitedCount
+                }
+            }
+            
             continue
         }
         
-        if currNode.Element == targetElement {
-            recipes = append(recipes, currNode.Path...)
-            
-            if findShortest {
-                break
-            }
-            continue
-        }
-
-        if !visited[currNode.Element] {
-            visited[currNode.Element] = true
-            
-            for nextElement, combinations := range graph {
-                nextTier, exists := tierMap[nextElement]
-                if !exists || (nextTier >= targetTier && nextElement != targetElement) {
-                    continue
+        combinations := graph[current.element]
+        for _, combination := range combinations {
+            if isValidCombination(tierMap, current.element, combination) {
+                newPath := make([][]string, len(current.path)+1)
+                copy(newPath, current.path)
+                newPath[len(current.path)] = combination
+                
+                reachedBase := true
+                for _, ingredient := range combination {
+                    if !baseElements[ingredient] {
+                        reachedBase = false
+                        if !visited[ingredient] && tierMap[ingredient] < tierMap[current.element] {
+                            newVisited := make(map[string]bool)
+                            for k, v := range current.visited {
+                                newVisited[k] = v
+                            }
+                            newVisited[current.element] = true
+                            
+                            queue = append(queue, struct{
+                                element string
+                                path [][]string
+                                visited map[string]bool
+                                depth int
+                            }{
+                                element: ingredient,
+                                path: newPath,
+                                visited: newVisited,
+                                depth: current.depth + 1,
+                            })
+                        }
+                    }
                 }
                 
-                for _, combination := range combinations {
-                    if len(combination) == 2 {
-                        ingredient1, ingredient2 := combination[0], combination[1]
+                if reachedBase {
+                    recipe := createRecipe(recipeIdCounter, targetElement, newPath, true)
+                    
+                    recipeKey := getRecipeKey(recipe)
+                    
+                    if !foundRecipes[recipeKey] {
+                        recipes = append(recipes, recipe)
+                        foundRecipes[recipeKey] = true
+                        recipeIdCounter++
                         
-                        if ingredient1 == currNode.Element || ingredient2 == currNode.Element {
-                            otherIngredient := ingredient2
-                            if ingredient1 != currNode.Element {
-                                otherIngredient = ingredient1
-                            }
-                            
-                            if currNode.Visited[otherIngredient] {
-                                continue
-                            }
-                            
-                            newNode := model.Node{
-                                Element:   nextElement,
-                                Path:      make([]model.Recipe, len(currNode.Path)+1),
-                                Visited:   make(map[string]bool),
-                                Depth:     currNode.Depth + 1,
-                            }
-                            
-                            copy(newNode.Path, currNode.Path)
-                            for k, v := range currNode.Visited {
-                                newNode.Visited[k] = v
-                            }
-                            
-                            newNode.Visited[nextElement] = true
-                            newNode.Visited[otherIngredient] = true
-                            
-                            newNode.Path[len(currNode.Path)] = model.Recipe{
-                                Ingredients: []string{currNode.Element, otherIngredient},
-                            }
-                            
-                            queue.PushBack(newNode)
+                        if findShortest && len(recipes) > 0 {
+                            return recipes, visitedCount
                         }
                     }
                 }
             }
         }
     }
+    
+    return recipes, visitedCount
+}
 
-    return model.SearchResult{
-        TargetElement: targetElement,
-        Recipes:       recipes,
-        VisitedNodes:  visitedCount,
-        TimeElapsed:   time.Since(startTime).Seconds(),
+func getRecipeKey(recipe model.Recipe) string {
+    key := ""
+    for _, node := range recipe.Nodes {
+        if node.Level == 1 {
+            key += node.Label + ","
+        }
     }
+    return key
+}
+
+func isValidCombination(tierMap model.TierMap, element string, combination []string) bool {
+    for _, ingredient := range combination {
+        if tierMap[ingredient] >= tierMap[element] {
+            return false
+        }
+    }
+    return true
+}
+
+func createRecipe(id int, targetElement string, path [][]string, isBase bool) model.Recipe {
+    recipe := model.Recipe{
+        ID: id,
+        Nodes: []model.RecipeNode{},
+        Links: []model.RecipeLink{},
+    }
+    
+    rootNode := model.RecipeNode{
+        ID: "target-" + strconv.Itoa(id),
+        Label: targetElement,
+        Level: 0,
+    }
+    recipe.Nodes = append(recipe.Nodes, rootNode)
+    
+    for i, combination := range path {
+        level := i + 1
+        
+        for j, ingredient := range combination {
+            nodeID := "ingredient-" + strconv.Itoa(id) + "-" + strconv.Itoa(i) + "-" + strconv.Itoa(j)
+            
+            node := model.RecipeNode{
+                ID: nodeID,
+                Label: ingredient,
+                Level: level,
+            }
+            recipe.Nodes = append(recipe.Nodes, node)
+            var parentID string
+            if i == 0 {
+                parentID = "target-" + strconv.Itoa(id)
+            } else {
+                parentID = "ingredient-" + strconv.Itoa(id) + "-" + strconv.Itoa(i-1) + "-0"
+            }
+            
+            link := model.RecipeLink{
+                Source: parentID,
+                Target: nodeID,
+            }
+            recipe.Links = append(recipe.Links, link)
+        }
+    }
+    
+    return recipe
 }

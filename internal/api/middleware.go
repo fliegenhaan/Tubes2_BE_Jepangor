@@ -63,9 +63,6 @@ func LoggerMiddleware() gin.HandlerFunc {
         if path == "/api/find-recipes" {
             fmt.Printf("[DEBUG] Request: %s\n", string(requestBody))
             responseStr := w.body.String()
-            if len(responseStr) > 500 {
-                responseStr = responseStr[:500] + "... (dipotong)"
-            }
             fmt.Printf("[DEBUG] Response: %s\n", responseStr)
         }
 

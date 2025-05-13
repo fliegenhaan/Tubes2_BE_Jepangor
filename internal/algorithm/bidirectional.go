@@ -1,163 +1,239 @@
 package algorithm
 
 import (
-    "time"
-
     "github.com/fliegenhaan/Tubes2_BE_Jepangor/internal/model"
 )
 
-func Bidirectional(graph model.Graph, tierMap model.TierMap, targetElement string, findShortest bool, maxRecipes int) model.SearchResult {
-    startTime := time.Now()
+func Bidirectional(graph model.Graph, tierMap model.TierMap, targetElement string, findShortest bool, maxRecipes int) ([]model.Recipe, int) {
     
-    if _, exists := graph[targetElement]; !exists {
-        return model.SearchResult{
-            TargetElement: targetElement,
-            Recipes:       []model.Recipe{},
-            VisitedNodes:  0,
-            TimeElapsed:   time.Since(startTime).Seconds(),
+    baseElements := map[string]bool{
+        "Air": true,
+        "Earth": true,
+        "Fire": true,
+        "Water": true,
+        "Time": true,
+    }
+    
+    forwardQueue := []struct{
+        element string
+        path [][]string
+        visited map[string]bool
+        depth int
+    }{
+        {
+            element: targetElement,
+            path: [][]string{},
+            visited: make(map[string]bool),
+            depth: 0,
+        },
+    }
+    
+    backwardQueues := make(map[string][]struct{
+        element string
+        path [][]string
+        visited map[string]bool
+        depth int
+    })
+    
+    for baseElement := range baseElements {
+        backwardQueues[baseElement] = []struct{
+            element string
+            path [][]string
+            visited map[string]bool
+            depth int
+        }{
+            {
+                element: baseElement,
+                path: [][]string{},
+                visited: make(map[string]bool),
+                depth: 0,
+            },
         }
     }
-
-    baseElements := []string{"Air", "Earth", "Fire", "Water"}
     
-    targetTier, exists := tierMap[targetElement]
-    if !exists {
-        targetTier = 999
+    forwardVisited := make(map[string]struct{
+        path [][]string
+        depth int
+    })
+    backwardVisited := make(map[string]map[string]struct{
+        path [][]string
+        depth int
+    })
+    
+    for baseElement := range baseElements {
+        backwardVisited[baseElement] = make(map[string]struct{
+            path [][]string
+            depth int
+        })
     }
     
-    for _, base := range baseElements {
-        if base == targetElement {
-            recipe := model.Recipe{
-                Ingredients: []string{targetElement},
-            }
-            return model.SearchResult{
-                TargetElement: targetElement,
-                Recipes:       []model.Recipe{recipe},
-                VisitedNodes:  1,
-                TimeElapsed:   time.Since(startTime).Seconds(),
-            }
-        }
-    }
-    
-    forwardFrontier := make(map[string]model.Node)
-    forwardVisited := make(map[string]bool)
-    
-    backwardFrontier := make(map[string]model.Node)
-    
-    for _, element := range baseElements {
-        node := model.Node{
-            Element:   element,
-            Path:      []model.Recipe{},
-            Visited:   make(map[string]bool),
-            Depth:     0,
-        }
-        node.Visited[element] = true
-        forwardFrontier[element] = node
-    }
-    
-    targetNode := model.Node{
-        Element:   targetElement,
-        Path:      []model.Recipe{},
-        Visited:   make(map[string]bool),
-        Depth:     0,
-    }
-    
-    targetNode.Visited[targetElement] = true
-    backwardFrontier[targetElement] = targetNode
-    
-    var meetingPoint string
-    var forwardNode  model.Node
+    recipes := []model.Recipe{}
     visitedCount := 0
-    maxIterations := 20
+    recipeIdCounter := 0
     
-    for iter := 0; iter < maxIterations; iter++ {
-        if len(forwardFrontier) == 0 || len(backwardFrontier) == 0 {
-            break
+    foundRecipes := make(map[string]bool)
+    
+    for len(forwardQueue) > 0 && len(recipes) < maxRecipes {
+        current := forwardQueue[0]
+        forwardQueue = forwardQueue[1:]
+        
+        if _, exists := forwardVisited[current.element]; exists {
+            continue
         }
         
-        visitedCount += len(forwardFrontier) + len(backwardFrontier)
-        
-        for elem := range forwardFrontier {
-            if _, exists := backwardFrontier[elem]; exists {
-                meetingPoint = elem
-                forwardNode = forwardFrontier[elem]
-                break
-            } 
+        forwardVisited[current.element] = struct{
+            path [][]string
+            depth int
+        }{
+            path: current.path,
+            depth: current.depth,
         }
-
+        visitedCount++
         
-        
-        if meetingPoint != "" {
-            break
-        }
-        
-        newForwardFrontier := make(map[string]model.Node)
-        for elem, node := range forwardFrontier {
-            forwardVisited[elem] = true
-            
-            for nextElement, combinations := range graph {
-                nextTier, exists := tierMap[nextElement]
-                if !exists || (nextTier >= targetTier && nextElement != targetElement) {
-                    continue
+        for _, bVisited := range backwardVisited {
+            if bInfo, meetPoint := bVisited[current.element]; meetPoint {
+                forwardPath := current.path
+                backwardPath := bInfo.path
+                
+                completePath := make([][]string, len(forwardPath)+len(backwardPath))
+                copy(completePath, forwardPath)
+                for i, bPath := range backwardPath {
+                    completePath[len(forwardPath)+i] = bPath
                 }
                 
-                for _, combination := range combinations {
-                    if len(combination) == 2 {
-                        ingredient1, ingredient2 := combination[0], combination[1]
-                        
-                        if ingredient1 == elem || ingredient2 == elem {
-                            otherIngredient := ingredient2
-                            if ingredient1 != elem {
-                                otherIngredient = ingredient1
-                            }
-                            
-                            if node.Visited[otherIngredient] {
-                                continue
-                            }
-                            
-                            newNode := model.Node{
-                                Element:   nextElement,
-                                Path:      make([]model.Recipe, len(node.Path)+1),
-                                Visited:   make(map[string]bool),
-                                Depth:     node.Depth + 1,
-                            }
-                            
-                            copy(newNode.Path, node.Path)
-                            for k, v := range node.Visited {
-                                newNode.Visited[k] = v
-                            }
-                            
-                            newNode.Visited[nextElement] = true
-                            newNode.Visited[otherIngredient] = true
-                            
-                            newNode.Path[len(node.Path)] = model.Recipe{
-                                Ingredients: []string{elem, otherIngredient},
-                            }
-                            
-                            if !forwardVisited[nextElement] {
-                                newForwardFrontier[nextElement] = newNode
-                            }
-                        }
+                recipe := createRecipe(recipeIdCounter, targetElement, completePath, false)
+                
+                recipeKey := getRecipeKey(recipe)
+                
+                if !foundRecipes[recipeKey] {
+                    recipes = append(recipes, recipe)
+                    foundRecipes[recipeKey] = true
+                    recipeIdCounter++
+                    
+                    if findShortest && len(recipes) > 0 {
+                        return recipes, visitedCount
                     }
                 }
             }
         }
         
-        forwardFrontier = newForwardFrontier
+        if baseElements[current.element] {
+            continue
+        }
+        
+        combinations := graph[current.element]
+        for _, combination := range combinations {
+            if isValidCombination(tierMap, current.element, combination) {
+                newPath := make([][]string, len(current.path)+1)
+                copy(newPath, current.path)
+                newPath[len(current.path)] = combination
+                
+                for _, ingredient := range combination {
+                    if _, visited := forwardVisited[ingredient]; !visited && tierMap[ingredient] < tierMap[current.element] {
+                        newVisited := make(map[string]bool)
+                        for k, v := range current.visited {
+                            newVisited[k] = v
+                        }
+                        newVisited[current.element] = true
+                        
+                        forwardQueue = append(forwardQueue, struct{
+                            element string
+                            path [][]string
+                            visited map[string]bool
+                            depth int
+                        }{
+                            element: ingredient,
+                            path: newPath,
+                            visited: newVisited,
+                            depth: current.depth + 1,
+                        })
+                    }
+                }
+            }
+        }
     }
     
-    if meetingPoint == "" {
-        return BFS(graph, tierMap, targetElement, findShortest, maxRecipes)
+    if len(recipes) < maxRecipes {
+        maxBackwardSteps := 3
+        
+        for baseElement, queue := range backwardQueues {
+            stepCount := 0
+            
+            for len(queue) > 0 && stepCount < maxBackwardSteps && len(recipes) < maxRecipes {
+                stepCount++
+                levelSize := len(queue)
+                
+                for i := 0; i < levelSize; i++ {
+                    current := queue[0]
+                    queue = queue[1:]
+                    
+                    if _, exists := backwardVisited[baseElement][current.element]; exists {
+                        continue
+                    }
+                    
+                    backwardVisited[baseElement][current.element] = struct{
+                        path [][]string
+                        depth int
+                    }{
+                        path: current.path,
+                        depth: current.depth,
+                    }
+                    visitedCount++
+                    
+                    if fInfo, meetPoint := forwardVisited[current.element]; meetPoint {
+                        forwardPath := fInfo.path
+                        backwardPath := current.path
+                        
+                        completePath := make([][]string, len(forwardPath)+len(backwardPath))
+                        copy(completePath, forwardPath)
+                        for i, bPath := range backwardPath {
+                            completePath[len(forwardPath)+i] = bPath
+                        }
+                        
+                        recipe := createRecipe(recipeIdCounter, targetElement, completePath, false)
+                        
+                        recipeKey := getRecipeKey(recipe)
+                        
+                        if !foundRecipes[recipeKey] {
+                            recipes = append(recipes, recipe)
+                            foundRecipes[recipeKey] = true
+                            recipeIdCounter++
+                            
+                            if findShortest && len(recipes) > 0 {
+                                return recipes, visitedCount
+                            }
+                        }
+                    }
+                    
+                    for element, combinations := range graph {
+                        for _, combination := range combinations {
+                            for _, ingredient := range combination {
+                                if ingredient == current.element && tierMap[element] > tierMap[current.element] {
+                                    newPath := make([][]string, len(current.path)+1)
+                                    copy(newPath, current.path)
+                                    newPath[len(current.path)] = combination
+                                    
+                                    queue = append(queue, struct{
+                                        element string
+                                        path [][]string
+                                        visited map[string]bool
+                                        depth int
+                                    }{
+                                        element: element,
+                                        path: newPath,
+                                        visited: current.visited,
+                                        depth: current.depth + 1,
+                                    })
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            backwardQueues[baseElement] = queue
+        }
     }
     
-    var combinedPath []model.Recipe
-    
-    combinedPath = append(combinedPath, forwardNode.Path...)
-    
-    return model.SearchResult{
-        TargetElement: targetElement,
-        Recipes:       combinedPath,
-        VisitedNodes:  visitedCount,
-        TimeElapsed:   time.Since(startTime).Seconds(),
-    }
+    return recipes, visitedCount
 }
