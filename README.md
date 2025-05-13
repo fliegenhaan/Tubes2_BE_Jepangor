@@ -1,4 +1,4 @@
-# Tubes2_BE_Jepangor
+# Tubes2_FE_Jepangor
 
 # Little Alchemy 2 Recipe Finder
 
@@ -66,44 +66,48 @@ Bidirectional Search adalah teknik pencarian yang menjalankan dua pencarian seka
 jepangor.vercel.app
 ```
 
-## Struktur Project
+## Struktur Program
 
 ### Frontend
 ```
-jepangor/
-├── public/
-│   └── placeholder.png
-├── src/
-│   ├── app/
-│   │   ├── about/
+Tubes2_FE_Jepangor/
+├── doc/
+│   └── Jepangor.pdf
+├── jepangor/
+│   ├── public/
+│   │   └── placeholder.png
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── about/
+│   │   │   │   └── page.tsx
+│   │   │   ├── globals.css
+│   │   │   ├── layout.tsx
 │   │   │   └── page.tsx
-│   │   ├── globals.css
-│   │   ├── layout.tsx
-│   │   └── page.tsx
-│   ├── components/
-│   │   ├── AlgorithmSelector.tsx
-│   │   ├── ElementSelector.tsx
-│   │   ├── Header.tsx
-│   │   ├── NavBar.tsx
-│   │   ├── RecipeTree.tsx
-│   │   ├── ResultInfo.tsx
-│   │   └── SearchForm.tsx
-│   ├── hooks/
-│   │   └── useRecipeSearch.ts
-│   ├── types/
-│   │   └── index.ts
-│   └── utils/
-│       └── api.ts
-├── .gitignore
-├── README.md
-├── eslint.config.mjs
-├── next.config.js
-├── package-lock.json
-├── package.json
-├── postcss.config.js
-├── postcss.config.mjs
-├── tailwind.config.js
-└── tsconfig.json
+│   │   ├── components/
+│   │   │   ├── AlgorithmSelector.tsx
+│   │   │   ├── ElementSelector.tsx
+│   │   │   ├── Header.tsx
+│   │   │   ├── NavBar.tsx
+│   │   │   ├── RecipeTree.tsx
+│   │   │   ├── ResultInfo.tsx
+│   │   │   └── SearchForm.tsx
+│   │   ├── hooks/
+│   │   │   └── useRecipeSearch.ts
+│   │   ├── types/
+│   │   │   └── index.ts
+│   │   └── utils/
+│   │       └── api.ts
+│   ├── .gitignore
+│   ├── README.md
+│   ├── eslint.config.mjs
+│   ├── next.config.js
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── postcss.config.js
+│   ├── postcss.config.mjs
+│   ├── tailwind.config.js
+│   └── tsconfig.json
+└── README.md
 ```
 
 ### Backend
@@ -113,6 +117,8 @@ Tubes2_BE_Jepangor/
 │   └── main.go
 ├── data/
 │   └── elements_with_tier.json
+├── doc/
+│   └── Jepangor.pdf
 ├── internal/
 │   ├── algorithm/
 │   │   ├── bfs.go
@@ -142,3 +148,9 @@ Tubes2_BE_Jepangor/
 - Muhammad Raihaan Perdana (13523124) - FullStack & Algorithm Developer
 - Ardell Aghna Mahendra (13523151) - UI/UX & Frontend Developer
 - Farrel Jabaar Altafataza (10122057) - Scraper & Algorithm Developer
+
+## Bonus
+- Video: https://youtu.be/pdd0t1Yrkwo
+- pencarian dengan strategi Bidirectional
+- Aplikasi di-deploy dan dapat diakses melalui internet
+- Aplikasi di-containerize dengan Docker
